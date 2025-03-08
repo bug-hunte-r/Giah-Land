@@ -27,8 +27,6 @@
    font-family: IRANSans;
  }
  
- 
-
 .container{
    width: 1100px;
    margin: 0 auto;
@@ -38,6 +36,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   width: 1100px;
 }
 
 .nav-side-right{
@@ -59,7 +58,7 @@
 .nav-links{
    text-decoration: none;
    color: #121212;
-   font-size: 18px;
+   font-size: 17px;
    font-weight: 400;
    transition: 0.3s;
 }
@@ -98,10 +97,6 @@
    padding: 7px 10px;
    background: none;
    cursor: pointer;
-}
-
-.icon-login{
-   margin-left: 10px;
 }
 
 .line-after-nav{

@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .container {
+        width: 1000px;
+    }
+
+    .nav {
+        width: 1000px;
+    }
+
+    .line-after-nav {
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .container {
+        width: 920px;
+    }
+
+    .nav {
+        width: 920px;
+    }
+
+    .line-after-nav {
+        width: 920px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .login-btn {
+        padding: 3px 5px;
+        font-weight: 400;
+    }
+
+    .icon-login {
+        width: 20px;
+    }
+
+    .btns-nav {
+        padding: 7px;
+    }
+
+    .icon-btns-nav{
+        width: 17px;
+    }
+
+    .nav-links {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+    .container{
+        width: 850px;
+    }
+
+    .nav {
+        width: 850px;
+    }
+
+    .line-after-nav {
+        width: 850px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container{
+        width: 800px;
+    }
+
+    .nav {
+        width: 800px;
+    }
+
+    .line-after-nav {
+        width: 800px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+
+    .icon-login {
+        width: 17px;
+    }
+
+    .icon-btns-nav{
+        width: 15px;
+    }
+
+    .nav-links {
+        font-size: 13px;
+    }
+
+    .container{
+        width: 750px;
+    }
+
+    .nav {
+        width: 750px;
+    }
+
+    .line-after-nav {
+        width: 750px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .ul-nav-links{
+        display: none;
+    }
+
+    .search-btn{
+        display: none;
+    }
+
+    .line-after-nav{
+        display: none;
+    }
+}

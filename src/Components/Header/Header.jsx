@@ -8,9 +8,9 @@ export default function Header() {
       <nav className='nav'>
 
         <div className="nav-side-left">
-          <button className='login-btn'>ورود/ثبت نام<img src="/Icons/login.png" alt="" className='icon-login' /></button>
-          <button className='btns-nav'><img src="/Icons/basket.png" alt="" /></button>
-          <button className='btns-nav'><img src="/Icons/search.png" alt="" /></button>
+          <button className='login-btn'>ورود/ثبت نام<img src="/Icons/login.png" className='icon-login' /></button>
+          <button className='btns-nav'><img src="/Icons/basket.png" className='icon-btns-nav'/></button>
+          <button className='btns-nav search-btn'><img src="/Icons/search.png" className='icon-btns-nav'/></button>
         </div>
 
         <div className="nav-side-right">
@@ -23,8 +23,9 @@ export default function Header() {
               <li className='li-nav-links'><a href="/" className='nav-links'>صفحه اصلی</a></li>
             </ul>
           </div>
-          <img src="/Imgs/گیاه لند.png" alt="" />
+          <img src="/Imgs/گیاه لند.png" />
         </div>
+          <img src="hamb-menu.png" />
 
       </nav>
       <img src="/Imgs/Vector 641.png" className='line-after-nav' />
