@@ -1,0 +1,109 @@
+@font-face {
+   font-family: 'IRANSans';
+   src: local(IRANSans), url(./fonts/IRANSans_Medium.ttf), format(truetype);
+   font-weight: 500;
+ }
+ 
+ @font-face {
+   font-family: 'IRANSans';
+   src: local(IRANSans), url(./fonts/IRANSans_Light.ttf), format(truetype);
+   font-weight: 300;
+ }
+ 
+ @font-face {
+   font-family: 'IRANSans';
+   src: local(IRANSans), url(./fonts/IRANSans.ttf), format(truetype);
+   font-weight: 400;
+ }
+ 
+ @font-face {
+   font-family: 'IRANSans';
+   src: local(IRANSans), url(./fonts/IRANSans_Bold.ttf), format(truetype);
+   font-weight: 800;
+ }
+ 
+ * {
+   box-sizing: border-box;
+   font-family: IRANSans;
+ }
+ 
+ 
+
+.container{
+   width: 1100px;
+   margin: 0 auto;
+}
+
+.nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-side-right{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+.ul-nav-links{
+   display: flex;
+   gap: 30px;
+}
+
+
+.li-nav-links{
+   list-style: none;
+}
+
+.nav-links{
+   text-decoration: none;
+   color: #121212;
+   font-size: 18px;
+   font-weight: 400;
+   transition: 0.3s;
+}
+
+.nav-links:hover{
+   color: #417F56;
+}
+
+.nav-side-left{
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.btns-nav{
+   border: 1px solid #417F56;
+   border-radius: 10px;
+   display: flex;
+   padding: 10px;
+   background: none;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+
+.btns-nav:hover{
+   transform: translateY(-4px);
+}
+
+.login-btn{
+   color: #417F56;
+   font-weight: 500;
+   border: 1px solid #417F56;
+   border-radius: 10px;
+   display: flex;
+   padding: 7px 10px;
+   background: none;
+   cursor: pointer;
+}
+
+.icon-login{
+   margin-left: 10px;
+}
+
+.line-after-nav{
+   width: 1100px;
+}
