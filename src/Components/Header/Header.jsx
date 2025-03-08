@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import './media.css'
 
 export default function Header() {
   return (
