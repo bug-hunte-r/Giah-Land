@@ -9,8 +9,8 @@ export default function Header() {
 
         <div className="nav-side-left">
           <button className='login-btn'>ورود/ثبت نام<img src="/Icons/login.png" className='icon-login' /></button>
-          <button className='btns-nav'><img src="/Icons/basket.png" className='icon-btns-nav'/></button>
-          <button className='btns-nav search-btn'><img src="/Icons/search.png" className='icon-btns-nav'/></button>
+          <button className='btns-nav'><img src="/Icons/basket.png" className='icon-btns-nav' /></button>
+          <button className='btns-nav search-btn'><img src="/Icons/search.png" className='icon-btns-nav' /></button>
         </div>
 
         <div className="nav-side-right">
@@ -24,10 +24,16 @@ export default function Header() {
             </ul>
           </div>
           <img src="/Imgs/گیاه لند.png" />
+          <img src="./Icons/hamb-menu.png" className='hamb-menu' />
         </div>
-          <img src="hamb-menu.png" />
+
 
       </nav>
+      <div className='search-box-div'>
+      <input type="text" placeholder='جسجتو گیاه' className='input-search-box' />
+      <img src="Icons/Vector.png" className='logo-search-box' />
+      </div>
+
       <img src="/Imgs/Vector 641.png" className='line-after-nav' />
     </div>
   )
