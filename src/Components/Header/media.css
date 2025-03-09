@@ -131,10 +131,6 @@
         width: 700px;
     }
 
-    .ul-nav-links {
-        display: none;
-    }
-
     .search-btn {
         display: none;
     }
@@ -147,13 +143,38 @@
         display: block;
     }
 
-
     .input-search-box {
         display: block;
     }
 
     .logo-search-box {
         display: block;
+    }
+
+    .ul-nav-links {
+        flex-direction: column-reverse;
+        position: absolute;
+        background-color: #417F56;
+        padding: 10px;
+        width: 200px;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        margin-top: -36px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .active{
+        margin-left: -573px;
+    }
+    
+    .unActive{
+        margin-left: -773px;
+    }
+
+    .nav-links{
+        color: white;
     }
 
 }
@@ -167,6 +188,10 @@
     .nav {
         width: 600px;
     }
+
+    .active{
+        margin-left: -500px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -178,7 +203,11 @@
     .nav {
         width: 550px;
     }
-} 
+
+    .active{
+        margin-left: -430px;
+    }
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -189,7 +218,11 @@
     .nav {
         width: 500px;
     }
-} 
+
+    .active{
+        margin-left: -400px;
+    }
+}
 
 @media only screen and (max-width: 550px) {
 
@@ -200,7 +233,11 @@
     .nav {
         width: 450px;
     }
-} 
+
+    .active{
+        margin-left: -350px;
+    }
+}
 
 @media only screen and (max-width: 500px) {
 
@@ -212,10 +249,14 @@
         width: 400px;
     }
 
-    .input-search-box{
+    .input-search-box {
         width: 350px;
     }
-} 
+
+    .active{
+        margin-left: -280px;
+    }
+}
 
 @media only screen and (max-width: 450px) {
 
@@ -227,10 +268,14 @@
         width: 350px;
     }
 
-    .input-search-box{
+    .input-search-box {
         width: 350px;
     }
-} 
+
+    .active{
+        margin-left: -240px;
+    }
+}
 
 @media only screen and (max-width: 400px) {
 
@@ -242,12 +287,21 @@
         width: 300px;
     }
 
-    .input-search-box{
+    .input-search-box {
         width: 300px;
+        font-size: 13px;
     }
 
-    .login-btn{
+    .login-btn {
         font-size: 10px;
         width: 92px;
     }
-} 
+
+    .logo-search-box {
+        width: 20px;
+    }
+
+    .active{
+        margin-left: -200px;
+    }
+}

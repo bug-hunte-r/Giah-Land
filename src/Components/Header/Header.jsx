@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import './media.css'
 
 export default function Header() {
+
+  const [showSmallMenu, setShowSmallMenu] = useState(false)
+
+  const showSmallMenuHandler = () => {
+    setShowSmallMenu(prevState => !prevState)
+  }
+
   return (
     <div className='container'>
       <nav className='nav'>
@@ -15,7 +22,9 @@ export default function Header() {
 
         <div className="nav-side-right">
           <div className="nav-links-container">
-            <ul className='ul-nav-links'>
+            <ul className={
+              showSmallMenu ? 'ul-nav-links active' : 'ul-nav-links unActive'
+            }>
               <li className='li-nav-links'><a href="" className='nav-links'>تماس باما</a></li>
               <li className='li-nav-links'><a href="" className='nav-links'>درباره ما</a></li>
               <li className='li-nav-links'><a href="" className='nav-links'>وبلاگ</a></li>
@@ -24,7 +33,7 @@ export default function Header() {
             </ul>
           </div>
           <img src="/Imgs/گیاه لند.png" />
-          <img src="./Icons/hamb-menu.png" className='hamb-menu' />
+          <img src="./Icons/hamb-menu.png" className='hamb-menu' onClick={showSmallMenuHandler} />
         </div>
 
 
