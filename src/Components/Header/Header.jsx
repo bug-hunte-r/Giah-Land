@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import './Header.css'
-import './media.css'
+import '../../media.css'
+import { IoMdMenu } from "react-icons/io";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { IoIosSearch } from "react-icons/io";
+import { CiLogin } from "react-icons/ci";
+import { IoClose } from "react-icons/io5";
 
 export default function Header() {
 
@@ -10,37 +15,51 @@ export default function Header() {
     setShowSmallMenu(prevState => !prevState)
   }
 
+  const closeSmallNavHandler = () => {
+    setShowSmallMenu(false)
+  }
+
   return (
     <div className='container'>
       <nav className='nav'>
 
         <div className="nav-side-left">
-          <button className='login-btn'>ورود/ثبت نام<img src="/Icons/login.png" className='icon-login' /></button>
-          <button className='btns-nav'><img src="/Icons/basket.png" className='icon-btns-nav' /></button>
-          <button className='btns-nav search-btn'><img src="/Icons/search.png" className='icon-btns-nav' /></button>
+          <button className='login-btn'>ورود/ثبت نام <CiLogin size={20} /></button>
+          <MdOutlineShoppingCart size={30} className='icon-basket-nav' />
+          <IoIosSearch size={30} className='icon-search-nav' />
         </div>
 
         <div className="nav-side-right">
           <div className="nav-links-container">
-            <ul className={
-              showSmallMenu ? 'ul-nav-links active' : 'ul-nav-links unActive'
-            }>
+            <ul className='ul-nav-links'>
               <li className='li-nav-links'><a href="" className='nav-links'>تماس باما</a></li>
               <li className='li-nav-links'><a href="" className='nav-links'>درباره ما</a></li>
-              <li className='li-nav-links'><a href="" className='nav-links'>وبلاگ</a></li>
+              <li className='li-nav-links'><a href='../Blog/Blog' className='nav-links'>وبلاگ</a></li>
               <li className='li-nav-links'><a href="" className='nav-links'>گیاه پزشک</a></li>
               <li className='li-nav-links'><a href="/" className='nav-links'>صفحه اصلی</a></li>
             </ul>
           </div>
-          <img src="/Imgs/گیاه لند.png" />
-          <img src="./Icons/hamb-menu.png" className='hamb-menu' onClick={showSmallMenuHandler} />
+          <h1 className='logo'>گیاه لند</h1>
+          <IoMdMenu onClick={showSmallMenuHandler} className='hamb-menu' size={25} />
         </div>
 
+        <div className="container-small-menu">
+        <ul className={
+          showSmallMenu ? 'ul-small-menu-nav-links active' : 'ul-small-menu-nav-links unActive'
+        }>
+          <IoClose size={20} className='icon-close-small-nav' onClick={closeSmallNavHandler} />
+          <li className='li-nav-links-small-menu'><a href="" className='nav-links-small-menu'>تماس باما</a></li>
+          <li className='li-nav-links-small-menu'><a href="" className='nav-links-small-menu'>درباره ما</a></li>
+          <li className='li-nav-links-small-menu'><a href='' className='nav-links-small-menu'>وبلاگ</a></li>
+          <li className='li-nav-links-small-menu'><a href="" className='nav-links-small-menu'>گیاه پزشک</a></li>
+          <li className='li-nav-links-small-menu'><a href="/" className='nav-links-small-menu'>صفحه اصلی</a></li>
+        </ul>
+        </div>
 
       </nav>
       <div className='search-box-div'>
-      <input type="text" placeholder='جسجتو گیاه' className='input-search-box' />
-      <img src="Icons/Vector.png" className='logo-search-box' />
+        <input type="text" placeholder='جسجتو گیاه' className='input-search-box' />
+        <img src="Icons/Vector.png" className='logo-search-box' />
       </div>
 
       <img src="/Imgs/Vector 641.png" className='line-after-nav' />
