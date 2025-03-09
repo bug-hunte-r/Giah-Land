@@ -6,6 +6,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
 import { CiLogin } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 export default function Header() {
 
@@ -18,6 +19,17 @@ export default function Header() {
   const closeSmallNavHandler = () => {
     setShowSmallMenu(false)
   }
+
+  // const testApi = () => {
+  //   fetch('/api/auth/login/api/auth/register')
+  //   .then(res => res.json())
+  //   .then(data => {
+  //     console.log(data);
+      
+  //   })
+  // }
+
+  // testApi()
 
   return (
     <div className='container'>
@@ -33,8 +45,8 @@ export default function Header() {
           <div className="nav-links-container">
             <ul className='ul-nav-links'>
               <li className='li-nav-links'><a href="" className='nav-links'>تماس باما</a></li>
-              <li className='li-nav-links'><a href="" className='nav-links'>درباره ما</a></li>
-              <li className='li-nav-links'><a href='../Blog/Blog' className='nav-links'>وبلاگ</a></li>
+              <li className='li-nav-links'><Link to={''} className='nav-links'>درباره ما</Link></li>
+              <li className='li-nav-links'><a href='' className='nav-links'>وبلاگ</a></li>
               <li className='li-nav-links'><a href="" className='nav-links'>گیاه پزشک</a></li>
               <li className='li-nav-links'><a href="/" className='nav-links'>صفحه اصلی</a></li>
             </ul>

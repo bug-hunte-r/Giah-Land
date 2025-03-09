@@ -1,0 +1,104 @@
+.container-sides{
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: repeat(2, 574px 600px);
+    justify-content: space-around;
+}
+
+.header-bottom-side-right{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-header-bottom{
+    color: #121212;
+    font-size: 40px;
+    text-align: right;
+}
+
+.desc-header-bottom{
+    width: 430px;
+    color: #353535;
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+.container-buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    width: 430px;
+}
+
+.btn-off-flower{
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    background-color: #417F56;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-conference{
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    background: none;
+    cursor: pointer;
+    border: 2px dashed #417F56;
+    color: #417F56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-Bottom-Img{
+    width: 550px;
+}
+
+.flowers-count-container{
+    display: flex;
+    width: 505px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.homely-flower{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #417F56;
+}
+
+.complement-flower{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #417F56;
+}
+
+.gifts-flower{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #417F56;
+}
+
+.count-flower{
+    font-weight: 400;
+}
+
+.cate-flower{
+    margin-top: -20px;
+    font-weight: 400;
+}

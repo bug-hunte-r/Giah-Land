@@ -223,10 +223,6 @@
         width: 400px;
     }
 
-    .input-search-box {
-        width: 350px;
-    }
-
     .logo{
         font-size: 20px;
     }
@@ -239,10 +235,6 @@
     }
 
     .nav {
-        width: 350px;
-    }
-
-    .input-search-box {
         width: 350px;
     }
 }
@@ -258,7 +250,6 @@
     }
 
     .input-search-box {
-        width: 250px;
         font-size: 13px;
     }
 
@@ -277,6 +268,6 @@
 
     .container-small-menu{
         margin-top: 35px;
-        margin-left: -34px;
+        margin-left: -9%;
     }
 }
