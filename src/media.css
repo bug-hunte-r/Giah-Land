@@ -139,12 +139,8 @@
         width: 700px;
     }
 
-    .search-btn {
-        display: none;
-    }
-
     .line-after-nav {
-        display: none;
+        width: 700px;
     }
 
     .hamb-menu {
@@ -167,6 +163,10 @@
         display: flex;
     }
 
+    .icon-search-nav{
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -176,6 +176,10 @@
     }
 
     .nav {
+        width: 600px;
+    }
+
+    .line-after-nav {
         width: 600px;
     }
 }
@@ -189,6 +193,10 @@
     .nav {
         width: 550px;
     }
+
+    .line-after-nav {
+        width: 550px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -198,6 +206,10 @@
     }
 
     .nav {
+        width: 500px;
+    }
+
+    .line-after-nav {
         width: 500px;
     }
 }
@@ -211,6 +223,10 @@
     .nav {
         width: 450px;
     }
+
+    .line-after-nav {
+        width: 450px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -220,6 +236,10 @@
     }
 
     .nav {
+        width: 400px;
+    }
+
+    .line-after-nav {
         width: 400px;
     }
 
@@ -237,6 +257,10 @@
     .nav {
         width: 350px;
     }
+
+    .line-after-nav {
+        width: 350px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -246,6 +270,10 @@
     }
 
     .nav {
+        width: 300px;
+    }
+
+    .line-after-nav {
         width: 300px;
     }
 
@@ -260,14 +288,5 @@
 
     .logo-search-box {
         width: 20px;
-    }
-
-    .logo{
-       font-size: 11px;
-    }
-
-    .container-small-menu{
-        margin-top: 35px;
-        margin-left: -9%;
     }
 }

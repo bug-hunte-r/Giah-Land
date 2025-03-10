@@ -20,17 +20,6 @@ export default function Header() {
     setShowSmallMenu(false)
   }
 
-  // const testApi = () => {
-  //   fetch('/api/auth/login/api/auth/register')
-  //   .then(res => res.json())
-  //   .then(data => {
-  //     console.log(data);
-      
-  //   })
-  // }
-
-  // testApi()
-
   return (
     <div className='container'>
       <nav className='nav'>
@@ -56,22 +45,26 @@ export default function Header() {
         </div>
 
         <div className="container-small-menu">
-        <ul className={
-          showSmallMenu ? 'ul-small-menu-nav-links active' : 'ul-small-menu-nav-links unActive'
-        }>
-          <IoClose size={20} className='icon-close-small-nav' onClick={closeSmallNavHandler} />
-          <li className='li-nav-links-small-menu'><a href="" className='nav-links-small-menu'>تماس باما</a></li>
-          <li className='li-nav-links-small-menu'><a href="" className='nav-links-small-menu'>درباره ما</a></li>
-          <li className='li-nav-links-small-menu'><a href='' className='nav-links-small-menu'>وبلاگ</a></li>
-          <li className='li-nav-links-small-menu'><a href="" className='nav-links-small-menu'>گیاه پزشک</a></li>
-          <li className='li-nav-links-small-menu'><a href="/" className='nav-links-small-menu'>صفحه اصلی</a></li>
-        </ul>
+          <ul className={
+            showSmallMenu ? 'ul-small-menu-nav-links active' : 'ul-small-menu-nav-links unActive'
+          }>
+            <IoClose size={20} className='icon-close-small-nav' onClick={closeSmallNavHandler} />
+            <li className='li-nav-links-small-menu'><a href="" className='nav-links-small-menu'>تماس باما</a></li>
+            <img src="/Imgs/Vector 641.png" className='line-after-lis' />
+            <li className='li-nav-links-small-menu'><a href="" className='nav-links-small-menu'>درباره ما</a></li>
+            <img src="/Imgs/Vector 641.png" className='line-after-lis' />
+            <li className='li-nav-links-small-menu'><a href='' className='nav-links-small-menu'>وبلاگ</a></li>
+            <img src="/Imgs/Vector 641.png" className='line-after-lis' />
+            <li className='li-nav-links-small-menu'><a href="" className='nav-links-small-menu'>گیاه پزشک</a></li>
+            <img src="/Imgs/Vector 641.png" className='line-after-lis' />
+            <li className='li-nav-links-small-menu'><a href="/" className='nav-links-small-menu'>صفحه اصلی</a></li>
+          </ul>
         </div>
 
       </nav>
       <div className='search-box-div'>
         <input type="text" placeholder='جسجتو گیاه' className='input-search-box' />
-        <img src="Icons/Vector.png" className='logo-search-box' />
+        <IoIosSearch className='logo-search-box' size={25} />
       </div>
 
       <img src="/Imgs/Vector 641.png" className='line-after-nav' />
