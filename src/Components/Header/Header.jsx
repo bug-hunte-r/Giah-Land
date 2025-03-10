@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css'
-import '../../media.css'
+import './mediaHeader.css'
 import { IoMdMenu } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
@@ -25,9 +25,9 @@ export default function Header() {
       <nav className='nav'>
 
         <div className="nav-side-left">
-          <button className='login-btn'>ورود/ثبت نام <CiLogin size={20} /></button>
-          <MdOutlineShoppingCart size={30} className='icon-basket-nav' />
-          <IoIosSearch size={30} className='icon-search-nav' />
+          <button className='login-btn'>ورود/ثبت نام <CiLogin size={24} /></button>
+          <MdOutlineShoppingCart size={35} className='icon-basket-nav' />
+          <IoIosSearch size={35} className='icon-search-nav' />
         </div>
 
         <div className="nav-side-right">
@@ -37,7 +37,7 @@ export default function Header() {
               <li className='li-nav-links'><Link to={''} className='nav-links'>درباره ما</Link></li>
               <li className='li-nav-links'><a href='' className='nav-links'>وبلاگ</a></li>
               <li className='li-nav-links'><a href="" className='nav-links'>گیاه پزشک</a></li>
-              <li className='li-nav-links'><a href="/" className='nav-links'>صفحه اصلی</a></li>
+              <li className='li-nav-links'><a href="/" className='nav-links main'>صفحه اصلی</a></li>
             </ul>
           </div>
           <h1 className='logo'>گیاه لند</h1>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './HeaderBottom.css'
+import './mediaHeaderBottom.css'
 import { FaArrowLeft } from "react-icons/fa";
 
 

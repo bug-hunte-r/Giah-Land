@@ -34,15 +34,6 @@
 
 @media only screen and (max-width: 1000px) {
 
-    .login-btn {
-        padding: 3px 5px;
-        font-weight: 400;
-    }
-
-    .icon-login {
-        width: 20px;
-    }
-
     .btns-nav {
         padding: 7px;
     }
@@ -280,12 +271,6 @@
     .input-search-box {
         font-size: 13px;
     }
-
-    .login-btn {
-        font-size: 10px;
-        width: 92px;
-    }
-
     .logo-search-box {
         width: 20px;
     }
