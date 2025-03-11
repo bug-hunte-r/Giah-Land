@@ -4,6 +4,7 @@ import { useRoutes } from 'react-router-dom'
 import router from './router'
 import HeaderBottom from './Components/Header-Bottom/HeaderBottom'
 import Main from './Components/MainSite/Main'
+import HousePlants from './Components/House-Plants/HousePlants'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <HeaderBottom />
       <Main />
+      <HousePlants />
 
       {routes}
     </div>
