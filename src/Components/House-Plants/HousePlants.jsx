@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ProductCard from '../Product-Card/ProductCard'
 import './HousePlants.css'
+import './mediaHousePlants.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Navigation } from 'swiper/modules';
@@ -41,7 +42,7 @@ export default function HousePlants() {
 
                 <div className="swiper-button-next"></div>
                 {housePlants && (
-                    <Swiper slidesPerView={4} loop={true} modules={[Navigation]} navigation={true} slidesPerGroup={1} className='swiper-container' >
+                    <Swiper slidesPerView={4} loop={true} modules={[Navigation]} navigation={true} slidesPerGroup={1} className='swiper-container'>
 
                         {housePlants.map((housePlant) => (
                             <SwiperSlide key={housePlant.id}>
