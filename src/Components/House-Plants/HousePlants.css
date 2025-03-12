@@ -1,21 +1,24 @@
-.container-slider{
-    margin-top: 40px;
+.container {
     width: 1100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.title-slider{
+.container-slider {
+    width: 1100px;
+    margin-top: 40px;
+    gap: 300px;
+}
+
+.title-slider {
     color: #417F56;
     font-size: 24px;
     text-align: right;
     margin-top: 100px;
 }
 
-.slider-controler-btn {
-    border: 1px solid #417F56;
-    border-radius: 100px;
-    color: #417F56;
-    cursor: pointer;
+.swiper-button-next {
+    margin-right: 2px;
+}
+
+.swiper-button-prev {
+    margin-left: 20px;
 }

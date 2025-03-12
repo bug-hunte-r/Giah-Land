@@ -34,10 +34,10 @@ export default function Header() {
           <div className="nav-links-container">
             <ul className='ul-nav-links'>
               <li className='li-nav-links'><a href="" className='nav-links'>تماس باما</a></li>
-              <li className='li-nav-links'><Link to={''} className='nav-links'>درباره ما</Link></li>
+              <li className='li-nav-links'><a href='' className='nav-links'>درباره ما</a></li>
               <li className='li-nav-links'><a href='' className='nav-links'>وبلاگ</a></li>
               <li className='li-nav-links'><a href="" className='nav-links'>گیاه پزشک</a></li>
-              <li className='li-nav-links'><a href="/" className='nav-links main'>صفحه اصلی</a></li>
+              <li className='li-nav-links'><a href="" className='nav-links main'>صفحه اصلی</a></li>
             </ul>
           </div>
           <h1 className='logo'>گیاه لند</h1>
