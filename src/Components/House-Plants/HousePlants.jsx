@@ -1,17 +1,38 @@
-import React, { useEffect, useState } from 'react'
-import ProductCard from '../Product-Card/ProductCard'
-import './HousePlants.css'
-import './mediaHousePlants.css'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
-import { Navigation } from 'swiper/modules';
+import React, { useEffect, useState } from 'react';
+import Slider from 'react-slick';
+import ProductCard from '../Product-Card/ProductCard';
+import './HousePlants.css';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <FaArrowRight
+            className={className}
+            style={{ ...style, display: 'block', color: '#417F56',}}
+            onClick={onClick}
+        />
+    );
+}
+
+function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <FaArrowLeft
+            className={className}
+            style={{ ...style, display: 'block', color: '#417F56'}}
+            onClick={onClick}
+        />
+    );
+}
 
 export default function HousePlants() {
+    const [allproducts, setAllProducts] = useState();
+    const [housePlants, setHousePlants] = useState();
 
-    const [allproducts, setAllProducts] = useState()
-    const [housePlants, setHousePlants] = useState()
-
-    // start fetching datas
+    // Fetching data
     useEffect(() => {
         const getData = async () => {
             const res = await fetch('https://giahland-api.vercel.app/api/products');
@@ -21,39 +42,41 @@ export default function HousePlants() {
 
         getData();
     }, []);
-    // finish fetching datas
 
-
-    // start filtring products
+    // Filtering products
     useEffect(() => {
         if (allproducts) {
-            let productsObj = allproducts.products
+            let productsObj = allproducts.products;
 
-            let filtredHousePlants = productsObj.filter(product => product.category === 'آپارتمانی')
-            setHousePlants(filtredHousePlants)
+            let filtredHousePlants = productsObj.filter(product => product.category === 'آپارتمانی');
+            setHousePlants(filtredHousePlants);
         }
     }, [allproducts]);
-    // finish filtring products
+
+    // Slider settings
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        rtl: true,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+    };
 
     return (
         <div className='container'>
             <h1 className='title-slider'>گیاهان آپارتمانی</h1>
-            <div className='container-slider'>
 
-                <div className="swiper-button-next"></div>
-                {housePlants && (
-                    <Swiper slidesPerView={4} loop={true} modules={[Navigation]} navigation={true} slidesPerGroup={1} className='swiper-container'>
-
-                        {housePlants.map((housePlant) => (
-                            <SwiperSlide key={housePlant.id}>
-                                <ProductCard name={housePlant.name} price={housePlant.price} image={housePlant.image} />
-                            </SwiperSlide>
-                        ))}
-
-                    </Swiper>
-                )}
-                <div className="swiper-button-prev"></div>
-            </div>
+            {housePlants && (
+                <Slider {...settings}>
+                    {housePlants.map((housePlant) => (
+                        <div key={housePlant.id} className="container-slider">
+                            <ProductCard name={housePlant.name} price={housePlant.price} image={housePlant.image} />
+                        </div>
+                    ))}
+                </Slider>
+            )}
         </div>
-    )
+    );
 }
