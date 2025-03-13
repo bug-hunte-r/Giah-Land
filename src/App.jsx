@@ -7,6 +7,8 @@ import ChatPage from './Components/ChatPage/ChatPage';
 
 function App() {
 
+  const routes = useRoutes(router)
+
   return (
     <div>
       <Routes>
@@ -18,7 +20,6 @@ function App() {
 
     </div>
 
-    
   )
 }
 
