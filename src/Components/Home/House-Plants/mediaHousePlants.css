@@ -22,10 +22,6 @@
     .container-card {
         width: 240px;
     }
-
-    .swiper-button-prev {
-        margin-left: 10px;
-    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -69,15 +65,7 @@
     }
 
     .container-card {
-        width: 190px;
-    }
-
-    .swiper-button-next {
-        margin-top: -35px;
-    }
-
-    .swiper-button-prev {
-        margin-top: -35px;
+        width: 185px;
     }
 
 }
@@ -109,28 +97,133 @@
     }
 
     .container-card {
-        width: 170px;
+        width: 210px;
     }
 
-    .swiper-button-next {
-        margin-top: -45px;
+    .title-card{
+        font-size: 18px;
     }
 
-    .swiper-button-prev {
-        margin-top: -45px;
+    .title-price {
+        font-size: 13px;
+    }
+    
+    .price-product {
+        font-size: 17px;
     }
 }
 
-@media only screen and (max-width: 750px) {}
+@media only screen and (max-width: 750px) {
 
-@media only screen and (max-width: 650px) {}
+    .container {
+        width: 600px;
+    }
 
-@media only screen and (max-width: 600px) {}
+    .container-card {
+        width: 190px;
+    }
 
-@media only screen and (max-width: 550px) {}
+}
 
-@media only screen and (max-width: 500px) {}
+@media only screen and (max-width: 650px) {
 
-@media only screen and (max-width: 450px) {}
+    .container {
+        width: 550px;
+    }
 
-@media only screen and (max-width: 400px) {}
+    .container-card {
+        width: 170px;
+    }
+
+    .title-card{
+        font-size: 16px;
+    }
+
+    .title-price{
+        font-size: 13px;
+    }
+
+    .price-product{
+        font-size: 15px;
+    }
+
+    .see-more-btn {
+        font-size: 12px;
+        font-weight: 100;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        width: 500px;
+    }
+
+    .container-card {
+        width: 260px;
+    }
+
+    .title-card{
+        font-size: 19px;
+    }
+
+    .title-slider{
+        margin-right: 20px;
+    }
+
+    .title-price {
+        font-size: 16px;
+    }
+    
+    .price-product {
+        font-size: 18px;
+    }
+
+    .see-more-btn{
+        font-size: 15px;
+    }
+
+    .title-slider{
+        margin-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .container {
+        width: 450px;
+    }
+
+    .title-slider{
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container {
+        width: 400px;
+    }
+
+    .title-slider{
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .container {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .container {
+        width: 300px;
+    }
+
+    .title-slider{
+        margin-right: -10px;
+    }
+}

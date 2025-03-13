@@ -8,22 +8,22 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 function NextArrow(props) {
-    const {className, style, onClick } = props;
+    const { className, style, onClick } = props;
     return (
         <FaArrowRight
             className={`${className} slider-btn`}
-            style={{ ...style, display: 'block', color: '#417F56',}}
+            style={{ ...style, display: 'block', color: '#417F56', }}
             onClick={onClick}
         />
     );
 }
 
 function PrevArrow(props) {
-    const {className, style, onClick } = props;
+    const { className, style, onClick } = props;
     return (
         <FaArrowLeft
             className={`${className} slider-btn`}
-            style={{ ...style, display: 'block', color: '#417F56'}}
+            style={{ ...style, display: 'block', color: '#417F56' }}
             onClick={onClick}
         />
     );
@@ -63,6 +63,21 @@ export default function HousePlants() {
         rtl: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        responsive: [
+            {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+        ]
     };
 
     return (
