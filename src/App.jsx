@@ -1,17 +1,21 @@
-import { useState } from 'react'
-import Header from './Components/Header/Header'
-import HeaderBottom from './Components/Header-Bottom/HeaderBottom'
-import Main from './Components/MainSite/Main'
-import HousePlants from './Components/House-Plants/HousePlants'
+
+
+import { Route, Routes } from 'react-router-dom'
+import Home from './Components/Home/Home'
+import Dashboard from './Components/Dashboard/Dashboard'
+import ChatPage from './Components/ChatPage/ChatPage';
 
 function App() {
 
   return (
     <div>
-      <Header />
-      <HeaderBottom />
-      <Main />
-      <HousePlants />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/chat" element={<ChatPage />} />
+      
+      </Routes>
+
     </div>
 
     

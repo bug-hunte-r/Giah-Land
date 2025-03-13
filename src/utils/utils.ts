@@ -17,3 +17,10 @@ export async function decrypt(input: string): Promise<any> {
   });
   return payload;
 }
+
+export function getCookie(name: string) {
+  const cookies = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith(`${name}=`));
+  return cookies ? cookies.split("=")[1] : null;
+}
