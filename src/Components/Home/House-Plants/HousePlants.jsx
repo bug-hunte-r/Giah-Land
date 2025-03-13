@@ -2,15 +2,16 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import ProductCard from '../Product-Card/ProductCard';
 import './HousePlants.css';
+import './mediaHousePlants.css';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 function NextArrow(props) {
-    const { className, style, onClick } = props;
+    const {className, style, onClick } = props;
     return (
         <FaArrowRight
-            className={className}
+            className={`${className} slider-btn`}
             style={{ ...style, display: 'block', color: '#417F56',}}
             onClick={onClick}
         />
@@ -18,10 +19,10 @@ function NextArrow(props) {
 }
 
 function PrevArrow(props) {
-    const { className, style, onClick } = props;
+    const {className, style, onClick } = props;
     return (
         <FaArrowLeft
-            className={className}
+            className={`${className} slider-btn`}
             style={{ ...style, display: 'block', color: '#417F56'}}
             onClick={onClick}
         />

@@ -1,20 +1,21 @@
 import { useState } from 'react'
-import Header from './Components/Header/Header'
-import HeaderBottom from './Components/Header-Bottom/HeaderBottom'
-import Main from './Components/MainSite/Main'
-import HousePlants from './Components/House-Plants/HousePlants'
+import { useRoutes, Route, Routes } from 'react-router-dom'
+import router from './router'
+import Home from './Components/Home/Home'
 
 function App() {
 
+  const routes = useRoutes(router)
+
   return (
     <div>
-      <Header />
-      <HeaderBottom />
-      <Main />
-      <HousePlants />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+
+      {routes}
     </div>
 
-    
   )
 }
 
