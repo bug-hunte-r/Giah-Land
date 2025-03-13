@@ -1,13 +1,23 @@
-import React from 'react'
-import { useUser } from '../../Context/UserProvider'
+import React from 'react';
+import { useUser } from '../../Context/UserProvider';
 import AdminDash from './AdminDash';
 import UserDash from './UserDash';
 
 const Dashboard = () => {
+  const { user, loading } = useUser();
 
-  const {user} = useUser();
-  if(user._doc.isAdmin) return <AdminDash user={user}/>
-  return <UserDash />
-}
+  console.log('Dashboard - user:', user, 'loading:', loading);
 
-export default Dashboard
+  if (loading) {
+    return <div>Loading your dashboard, hold up...</div>;
+  }
+  if (!user) {
+    return <div>No user found, bro. Log in or check your session.</div>;
+  }
+  if (user._doc && user._doc.isAdmin) {
+    return <AdminDash user={user} />;
+  }
+  return <UserDash />;
+};
+
+export default Dashboard;
