@@ -5,7 +5,7 @@ import '../House-Plants/mediaHousePlants.css'
 export default function ProductCard(props) {
     return (
             <div className="container-card">
-                    <img src={props.image} className='img-card' />
+                    <img src='Imgs/Frame 11.png' className='img-card' />
                     <p className='title-card'>{props.name}</p>
                     <div className="container-price-product">
                         <p className="price-product">{props.price} تومان</p>
