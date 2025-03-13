@@ -8,6 +8,14 @@
     width: 260px;
 }
 
+.img-card {
+    width: 100%;
+    height: 180px; /* یک ارتفاع ثابت */
+    object-fit: cover; /* یا contain بسته به نیازت */
+    border-radius: 10px; /* اگر گوشه‌های گرد می‌خوای */
+}
+
+
 .title-card {
     color: #121212;
     font-size: 18px;
