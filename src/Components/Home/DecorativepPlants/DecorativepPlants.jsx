@@ -5,7 +5,7 @@ import './mediaDecorativepPlants.css';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import ProductCard from './Product-Card-Decor/ProductCard'
+import ProductCard from './Product-Card/ProductCard'
 
 function NextArrow(props) {
     const { className, style, onClick } = props;
