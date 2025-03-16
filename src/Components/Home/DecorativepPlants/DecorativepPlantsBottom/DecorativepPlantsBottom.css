@@ -1,0 +1,15 @@
+.container-House-Plants-bottom-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.cards-bottom-house{
+    width: 260px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cards-bottom-house:hover{
+    transform: translateY(-5px);
+}
