@@ -1,0 +1,221 @@
+@media only screen and (max-width: 1400px) {
+
+    .container {
+        width: 1100px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .container {
+        width: 1000px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 1000px;
+    }
+
+    .cards-bottom-house{
+        width: 240px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+
+    .container {
+        width: 920px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 920px;
+    }
+
+    .cards-bottom-house{
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .container {
+        width: 850px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 850px;
+    }
+
+    .cards-bottom-house{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container {
+        width: 800px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 800px;
+    }
+
+    .cards-bottom-house{
+        width: 190px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .container {
+        width: 750px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 750px;
+    }
+
+    .cards-bottom-house{
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        width: 700px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 700px;
+    }
+
+    .cards-bottom-house{
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .container {
+        width: 600px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        justify-content: space-evenly;
+    }
+
+    .cards-bottom-house{
+        width: 260px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    
+    .container {
+        width: 550px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 550px;
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    .cards-bottom-house{
+        width: 250px;
+        margin-top: 13px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        width: 500px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 500px;
+        grid-template-columns: repeat(2, 230px);
+        justify-content: space-evenly;
+    }
+
+    .cards-bottom-house{
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .container {
+        width: 450px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 450px;
+        grid-template-columns: repeat(2, 200px);
+        justify-content: space-evenly;
+    }
+
+    .cards-bottom-house{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container {
+        width: 400px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 400px;
+        grid-template-columns: repeat(2, 180px);
+        justify-content: space-evenly;
+    }
+
+    .cards-bottom-house{
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .container {
+        width: 350px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 350px;
+        grid-template-columns: repeat(2, 160px);
+        justify-content: space-evenly;
+    }
+
+    .cards-bottom-house{
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .container {
+        width: 300px;
+    }
+
+    .container-House-Plants-bottom-cards {
+        width: 300px;
+        grid-template-columns: repeat(2, 140px);
+        justify-content: space-evenly;
+    }
+
+    .cards-bottom-house{
+        width: 140px;
+    }
+}
