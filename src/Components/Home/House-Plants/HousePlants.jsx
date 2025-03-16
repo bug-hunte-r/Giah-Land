@@ -30,8 +30,10 @@ function PrevArrow(props) {
 }
 
 export default function HousePlants() {
+
     const [allproducts, setAllProducts] = useState();
     const [housePlants, setHousePlants] = useState();
+
 
     // Fetching data
     useEffect(() => {
@@ -65,24 +67,26 @@ export default function HousePlants() {
         prevArrow: <PrevArrow />,
         responsive: [
             {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 3,
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 3,
+                },
             },
-        },
 
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                },
             },
-        },
         ]
     };
 
+    const [titleHomely, setTitleHomely] = useState('گیاهان آپارتمانی')
+
     return (
         <div className='container'>
-            <h1 className='title-slider'>گیاهان آپارتمانی</h1>
+            <h1 className='title-slider'>{titleHomely}</h1>
 
             {housePlants && (
                 <Slider {...settings}>
