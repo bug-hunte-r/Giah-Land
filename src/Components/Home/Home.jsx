@@ -6,6 +6,7 @@ import HousePlants from './House-Plants/HousePlants'
 import HousePlantsBottom from './House-Plants-bottom/House-Plants-bottom'
 import MedicinalPlant from './MedicinalPlant/MedicinalPlant'
 import DecorativepPlants from './DecorativepPlants/DecorativepPlants'
+import DecorativepPlantsBottom from './DecorativepPlants/DecorativepPlantsBottom/DecorativepPlantsBottom'
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <HousePlantsBottom />
             <MedicinalPlant />
             <DecorativepPlants />
+            <DecorativepPlantsBottom />
         </div>
     )
 }
