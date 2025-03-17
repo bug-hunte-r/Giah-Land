@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
-import ProductCard from '../Product-Card/ProductCard';
+import ProductCard from './../ProductCard/ProductCard';
 import './HousePlants.css';
 import './mediaHousePlants.css';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
