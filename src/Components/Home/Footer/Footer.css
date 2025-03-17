@@ -1,0 +1,82 @@
+.container {
+    width: 1100px;
+}
+
+.container-footer-sides{
+    width: 1265px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+    background-color: #F6F6F6;
+    justify-self: center;
+    height: 350px;
+    align-items: center;
+}
+
+.side-right-footer{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+}
+
+.title-footer{
+    font-size: 24px;
+    width: 72px;
+    color: #417F56;
+}
+
+.desc-footer{
+    font-size: 15px;
+    width: 450px;
+    color: #505050;
+}
+
+.phone-number{
+    font-size: 20px;
+    color: #505050;
+    font-weight: 400;
+}
+
+.container-social-icons{
+    display: flex;
+    justify-self: end;
+    gap: 20px;
+}
+
+.icons-footer{
+    color: #505050;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons-footer:hover{
+    color: #417F56;
+}
+
+
+/* start side left */
+
+.side-left-footer{
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.title-side-left-footer{
+    color: #505050;
+    font-size: 17px;
+}
+
+.link-footer{
+    color: #505050;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link-footer:hover{
+    color: #417F56;
+}
