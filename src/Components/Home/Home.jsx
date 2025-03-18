@@ -7,6 +7,7 @@ import MedicinalPlant from './MedicinalPlant/MedicinalPlant'
 import DecorativepPlants from './DecorativepPlants/DecorativepPlants'
 import DecorativepPlantsBottom from './DecorativepPlants/DecorativepPlantsBottom/DecorativepPlantsBottom'
 import GiftPlants from './GiftPlants/GiftPlants'
+import Footer from './Footer/Footer'
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
             <DecorativepPlants />
             <DecorativepPlantsBottom />
             <GiftPlants />
+            <Footer />
         </div>
     )
 }
