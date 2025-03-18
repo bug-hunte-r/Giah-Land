@@ -1,6 +1,6 @@
 import React from 'react'
 import './ProductCard.css'
-import '../HousePlants/mediaHousePlants.css'
+import './../HousePlants/mediaHousePlants.css'
 
 export default function ProductCard(props) {
     return (

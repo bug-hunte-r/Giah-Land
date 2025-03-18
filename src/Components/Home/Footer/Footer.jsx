@@ -23,7 +23,7 @@ export default function Footer() {
                         <h3 className="title-side-left-footer">تزئینی</h3>
                         <p className="link-footer">پشم</p>
                         <p className="link-footer">کراسولا</p>
-                        <p className="link-footer">کراسولا حرفه ای</p>
+                        <p className="link-footer">پوتوس</p>
                     </div>
 
                     <div className="house-plants-footer">

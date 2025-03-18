@@ -39,6 +39,17 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 900px;
+    }
+
+    .container-slider {
+        width: 900px;
+    }
+}
+
+
 @media only screen and (max-width: 960px) {
 
     .container {

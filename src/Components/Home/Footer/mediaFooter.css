@@ -1,27 +1,246 @@
-@media only screen and (max-width: 1400px) {}
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 1100px;
+    }
 
-@media only screen and (max-width: 1150px){}
+    .container-footer-sides {
+        width: 1265px;
+    }
+}
 
-@media only screen and (max-width: 1060px){}
+@media only screen and (max-width: 1150px) {
 
-@media only screen and (max-width: 960px){}
+    .container {
+        width: 1000px;
+    }
 
-@media only screen and (max-width: 900px){}
+    .container-footer-sides {
+        width: 1000px;
+    }
 
-@media only screen and (max-width: 850px){}
+    .desc-footer {
+        width: 400px;
+    }
+}
 
-@media only screen and (max-width: 800px){}
+@media only screen and (max-width: 1060px) {
 
-@media only screen and (max-width: 750px){}
+    .container {
+        width: 920px;
+    }
 
-@media only screen and (max-width: 650px){}
+    .container-footer-sides {
+        width: 920px;
+    }
+}
 
-@media only screen and (max-width: 600px){}
+@media only screen and (max-width: 960px) {
 
-@media only screen and (max-width: 550px){}
+    .container {
+        width: 850px;
+    }
 
-@media only screen and (max-width: 500px){}
+    .container-footer-sides {
+        width: 850px;
+    }
 
-@media only screen and (max-width: 450px){}
+    .desc-footer {
+        width: 350px;
+    }
+}
 
-@media only screen and (max-width: 400px){}
+@media only screen and (max-width: 900px) {
+
+    .container {
+        width: 800px;
+    }
+
+    .container-footer-sides {
+        width: 800px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+
+    .container {
+        width: 750px;
+    }
+
+    .container-footer-sides {
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        width: 700px;
+    }
+
+    .container-footer-sides {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .container {
+        width: 600px;
+    }
+
+    .container-footer-sides {
+        width: 600px;
+    }
+
+    .desc-footer {
+        font-size: 13px;
+        width: 300px;
+    }
+
+    .phone-number {
+        font-size: 17px;
+    }
+
+    .title-footer {
+        font-size: 23px;
+    }
+
+    .title-side-left-footer {
+        font-size: 13px;
+
+    }
+
+    .link-footer {
+        font-size: 13px;
+
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .container {
+        width: 550px;
+    }
+
+    .container-footer-sides {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        width: 500px;
+    }
+
+    .container-footer-sides {
+        width: 500px;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .side-left-footer {
+        justify-content: end;
+        gap: 80px;
+        width: 100%;
+    }
+
+    .side-right-footer {
+        width: 100%;
+    }
+
+    .desc-footer {
+        width: 500px;
+        font-size: 15px;
+    }
+
+    .title-footer {
+        font-size: 24px;
+    }
+
+    .title-side-left-footer {
+        font-size: 17px;
+    }
+
+    .link-footer {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .container{
+        width: 450px;
+    }
+
+    .container-footer-sides{
+        width: 450px;
+    }
+
+    .desc-footer{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container{
+        width: 400px;
+    }
+
+    .container-footer-sides{
+        width: 400px;
+    }
+
+    .desc-footer{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .container{
+        width: 350px;
+    }
+
+    .container-footer-sides{
+        width: 350px;
+    }
+
+    .desc-footer{
+        width: 350px;
+    }
+
+    .link-footer{
+        font-size: 15px;
+    }
+    
+    .title-side-left-footer{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .container{
+        width: 300px;
+    }
+
+    .container-footer-sides{
+        width: 300px;
+    }
+
+    .desc-footer{
+        width: 300px;
+    }
+
+    .link-footer{
+        font-size: 13px;
+    }
+    
+    .title-side-left-footer{
+        font-size: 13px;
+    }
+}
