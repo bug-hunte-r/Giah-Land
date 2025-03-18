@@ -25,7 +25,7 @@ export default function Header() {
       <nav className='nav'>
 
         <div className="nav-side-left">
-          <button className='login-btn'>ورود/ثبت نام <CiLogin size={24} /></button>
+          <Link to={'./signUp'}><button className='login-btn'>ورود/ثبت نام <CiLogin size={24} /></button></Link>
           <MdOutlineShoppingCart size={35} className='icon-basket-nav' />
           <IoIosSearch size={35} className='icon-search-nav' />
         </div>
@@ -37,7 +37,7 @@ export default function Header() {
               <li className='li-nav-links'><a href='' className='nav-links'>درباره ما</a></li>
               <li className='li-nav-links'><a href='' className='nav-links'>وبلاگ</a></li>
               <li className='li-nav-links'><a href="" className='nav-links'>گیاه پزشک</a></li>
-              <li className='li-nav-links'><a href="" className='nav-links main'>صفحه اصلی</a></li>
+              <li className='li-nav-links'><Link to={'/'} className='nav-links main'>صفحه اصلی</Link></li>
             </ul>
           </div>
           <h1 className='logo'>گیاه لند</h1>
