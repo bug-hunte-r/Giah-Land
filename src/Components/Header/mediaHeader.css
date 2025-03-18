@@ -153,6 +153,7 @@
 
     .ul-small-menu-nav-links{
         display: flex;
+        z-index: 1;
     }
 
     .icon-search-nav{
