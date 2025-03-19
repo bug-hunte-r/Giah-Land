@@ -1,0 +1,43 @@
+.container-sidebar{
+    width: 396px;
+    float: right;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.container-user-info-sidebar{
+    width: 264px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+    background-color: blue;
+}
+
+.img-user-sidebar{
+    width: 55px;
+    height: 55px;
+    border-radius: 200px;
+}
+
+.username-sidebar{
+    color: #121212;
+    font-size: 14px;
+}
+
+.user-phone-sidebar{
+    color: #717171;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+.container-btns-sidebar{
+    background-color: blue;
+    width: 264px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
