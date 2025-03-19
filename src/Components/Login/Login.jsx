@@ -20,7 +20,7 @@ export default function Login() {
                     <input type="text" className="inputs-login" placeholder='شماره موبایل' />
                     <IoPhonePortraitOutline size={20} className='icon-input-login'/>
 
-                    <input type="password" className="inputs-login" placeholder='تعریف رمز عبور' />
+                    <input type="password" className="inputs-login" placeholder='رمز عبور' />
                     <MdKey size={20} className='icon-input-login'/>
 
                     <button className='btn-login'>ورود</button>

@@ -27,9 +27,6 @@ export default function SignUp() {
                     <input type="password" className="inputs-sign-up" placeholder='تعریف رمز عبور' />
                     <MdKey size={20} className='icon-input-sign-up'/>
 
-                    <input type="password" className="inputs-sign-up" placeholder='تکرار رمز عبور' />
-                    <MdKey size={20} className='icon-input-sign-up'/>
-
                     <button className='btn-sign-up'>ثبت نام</button>
 
                     <p className="link-go-to-login">حساب کاربری دارید؟ <Link to={'/Login'} className='Link-go-to-sign-in'>ورود</Link> کنید</p>

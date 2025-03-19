@@ -109,6 +109,10 @@
    cursor: pointer;
 }
 
+.link-sign-up-nav{
+   text-decoration: none;
+}
+
 .icon-login{
    margin-left: 10px;
 }
