@@ -1,29 +1,17 @@
-
-
-import { Route, Routes } from 'react-router-dom'
-import Home from './Components/Home/Home'
-import Dashboard from './Components/Dashboard/Dashboard'
-import ChatPage from './Components/ChatPage/ChatPage';
-import SignUp from './Components/SignUp/SignUp';
+import { Route, Routes, useRoutes } from 'react-router-dom'
 import Header from './Components/Header/Header';
-import Login from './Components/Login/Login';
+import router from './router';
 
 function App() {
+
+  const routes = useRoutes(router)
 
 
   return (
     <div>
-
       <Header />
-      
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/chat" element={<ChatPage />} />
-        <Route path="/signUp" element={<SignUp />} />
-        <Route path="/Login" element={<Login />} />
-      </Routes>
 
+      {routes}
     </div>
 
   )

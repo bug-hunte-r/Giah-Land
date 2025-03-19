@@ -1,12 +1,17 @@
-import AdminPage from "./Components/AdminPage/AdminPage"
+import Home from "./Components/Home/Home"
+import Dashboard from "./Components/Dashboard/Dashboard"
 import ChatPage from "./Components/ChatPage/ChatPage"
-import UserDashboard from "./Components/Dashboard/Dashboard"
+import UserDashboard from "./Components/UserDashboard/UserDash"
+import SignUp from "./Components/SignUp/SignUp"
+import Login from "./Components/Login/Login"
 
 let router = [
-    {path: '/chat', element: <ChatPage />},    
-    {path: '/admin', element: <AdminPage /> },
-    {path: '/dashboard', element: <UserDashboard /> },
-        
+    { path: "/", element: <Home /> },
+    { path: "/dashboard", element: <Dashboard /> },
+    { path: '/chat', element: <ChatPage /> },
+    { path: '/userDashboard', element: <UserDashboard /> },
+    { path: "/signUp", element: <SignUp /> },
+    { path: "/login", element: <Login /> }
 ]
 
 export default router

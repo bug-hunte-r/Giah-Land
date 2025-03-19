@@ -1,7 +1,7 @@
 import React from 'react';
 import { useUser } from '../../Context/UserProvider';
 import AdminDash from './AdminDash';
-import UserDash from './UserDash';
+import UserDash from '../UserDashboard/UserDash'
 
 const Dashboard = () => {
   const { user, loading } = useUser();

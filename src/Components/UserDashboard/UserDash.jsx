@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import io from 'socket.io-client';
+import SidebarDash from '../SidebarDash/SidebarDash';
 
 const socket = io('https://giah-land-websocket.onrender.com');
 
@@ -29,18 +30,7 @@ function UserDashboard() {
 
   return (
     <div>
-      <h1>Your Dashboard</h1>
-      <div>
-        {chat.map((msg, i) => (
-          <p key={i}>{msg.user}: {msg.text}</p>
-        ))}
-      </div>
-      <input
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Type to admin..."
-      />
-      <button onClick={sendMessage}>Send</button>
+      <SidebarDash />
     </div>
   );
 }
