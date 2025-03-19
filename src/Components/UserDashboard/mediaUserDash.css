@@ -1,0 +1,388 @@
+@media only screen and (max-width: 1150px) {
+    .container-user-info-dash {
+        width: 750px;
+    }
+
+    .inputs-user-dash {
+        width: 350px;
+    }
+
+    .input-change-user-pass {
+        width: 350px;
+    }
+
+    .container-chnage-user-pass {
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+
+    .container-user-info-dash {
+        width: 670px;
+    }
+
+    .inputs-user-dash {
+        width: 310px;
+    }
+
+    .input-change-user-pass {
+        width: 310px;
+    }
+
+    .container-chnage-user-pass {
+        width: 670px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(2, 310px);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .container-user-info-dash {
+        width: 660px;
+    }
+
+    .inputs-user-dash {
+        width: 280px;
+    }
+
+    .input-change-user-pass {
+        width: 280px;
+    }
+
+    .container-chnage-user-pass {
+        width: 660px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(2, 280px);
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .container-user-info-dash {
+        width: 600px;
+    }
+
+    .container-chnage-user-pass {
+        width: 600px;
+    }
+
+    .inputs-user-dash {
+        width: 260px;
+    }
+
+    .input-change-user-pass {
+        width: 260px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(2, 260px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container-user-info-dash {
+        width: 550px;
+    }
+
+    .container-chnage-user-pass {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .container-user-info-dash {
+        width: 500px;
+    }
+
+    .container-chnage-user-pass {
+        width: 500px;
+    }
+
+    .inputs-user-dash {
+        width: 240px;
+    }
+
+    .input-change-user-pass {
+        width: 240px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(2, 240px);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container-user-info-dash {
+        width: 450px;
+    }
+
+    .container-chnage-user-pass {
+        width: 450px;
+    }
+
+    .inputs-user-dash {
+        width: 210px;
+    }
+
+    .input-change-user-pass {
+        width: 210px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(2, 210px);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .container-user-info-dash {
+        width: 350px;
+    }
+
+    .container-chnage-user-pass {
+        width: 350px;
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+
+    .title-change-user-pass {
+        margin-top: 200px;
+    }
+
+    .inputs-user-dash {
+        width: 350px;
+    }
+
+    .input-change-user-pass {
+        width: 350px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(1, 350px);
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .container-user-info-dash {
+        width: 300px;
+    }
+
+    .container-chnage-user-pass {
+        width: 300px;
+    }
+
+    .inputs-user-dash {
+        width: 300px;
+    }
+
+    .input-change-user-pass {
+        width: 300px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container-user-info-dash {
+        width: 290px;
+    }
+
+    .container-chnage-user-pass {
+        width: 290px;
+    }
+
+    .inputs-user-dash {
+        width: 290px;
+    }
+
+    .input-change-user-pass {
+        width: 290px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(1, 290px);
+    }
+
+    .btn-edit-user-img {
+        font-size: 12px;
+    }
+
+    .btn-delete-user-img {
+        font-size: 12px;
+        width: 135px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container-user-info-dash {
+        width: 250px;
+    }
+
+    .container-chnage-user-pass {
+        width: 250px;
+    }
+
+    .inputs-user-dash {
+        width: 250px;
+    }
+
+    .input-change-user-pass {
+        width: 250px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(1, 250px);
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container-user-info-dash {
+        width: 200px;
+    }
+
+    .container-chnage-user-pass {
+        width: 200px;
+    }
+
+    .inputs-user-dash {
+        width: 200px;
+    }
+
+    .input-change-user-pass {
+        width: 200px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(1, 200px);
+    }
+
+    .container-edit-user-img {
+        gap: 8px;
+    }
+
+    .btn-edit-user-img {
+        font-size: 10px;
+        height: 30px;
+    }
+
+    .btn-delete-user-img {
+        font-size: 10px;
+        height: 30px;
+    }
+
+    .img-user-dash {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .container-user-info-dash {
+        width: 190px;
+    }
+
+    .title-change-user-pass{
+        margin-top: 140px;
+    }
+
+    .container-chnage-user-pass {
+        width: 190px;
+    }
+
+    .inputs-user-dash {
+        width: 190px;
+    }
+
+    .input-change-user-pass {
+        width: 190px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(1, 190px);
+    }
+
+    .inputs-user-dash {
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .input-change-user-pass {
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .btn-save-changes{
+        height: 30px;
+    }
+
+    .container-edit-user-img {
+        gap: 5px;
+    }
+
+    .img-user-dash {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .container-user-info-dash {
+        width: 160px;
+    }
+
+    .container-chnage-user-pass {
+        width: 160px;
+    }
+
+    .inputs-user-dash {
+        width: 160px;
+    }
+
+    .input-change-user-pass {
+        width: 160px;
+    }
+
+    .container-inputs-user-dash {
+        grid-template-columns: repeat(1, 160px);
+    }
+
+    .btn-save-changes{
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .container-edit-user-img{
+        flex-direction: column-reverse;
+    }
+
+    .img-user-dash{
+        width: 55px;
+        height: 55px;
+    }
+
+    .btn-delete-user-img{
+        font-size: 12px;
+    }
+
+    .btn-edit-user-img{
+        font-size: 12px;
+    }
+}

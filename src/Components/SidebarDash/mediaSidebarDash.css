@@ -1,0 +1,120 @@
+@media only screen and (max-width: 600px) {
+    .container-sidebar {
+        width: 180px;
+    }
+
+    .container-btns-sidebar {
+        width: 160px;
+    }
+
+    .btns-sidebar {
+        font-size: 12px;
+        height: 40px;
+    }
+    
+    .logOut-sidebar{
+        width: 160px;
+        font-size: 12px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .container-sidebar {
+        width: 170px;
+    }
+
+    .container-btns-sidebar {
+        width: 150px;
+    }
+
+    .btns-sidebar {
+        font-size: 11px;
+    }
+
+    .logOut-sidebar{
+        width: 150px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .container-sidebar {
+        width: 140px;
+    }
+
+    .container-btns-sidebar {
+        width: 130px;
+    }
+
+    .btns-sidebar {
+        justify-content: center;
+        height: 40px;
+    }
+
+    .icons-sidebar{
+        display: none;
+    }
+
+    .container-user-info-sidebar {
+        width: 150px;
+    }
+
+    .img-user-sidebar {
+        width: 45px;
+        height: 45px;
+    }
+
+    .username-sidebar {
+        font-size: 12px;
+    }
+
+    .user-phone-sidebar {
+        font-size: 12px;
+    }
+
+    .logOut-sidebar{
+        width: 130px;
+        height: 40px;
+    }
+
+    .icon-logout-sidebar{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .container-sidebar {
+        width: 120px;
+    }
+
+    .container-btns-sidebar {
+        width: 110px;
+    }
+
+    .btns-sidebar {
+        font-size: 10px;
+    }
+
+    .img-user-sidebar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .username-sidebar {
+        font-size: 10px;
+    }
+
+    .user-phone-sidebar {
+        font-size: 10px;
+    }
+
+    .logOut-sidebar{
+        width: 110px;
+        font-size: 10px;
+    }
+}

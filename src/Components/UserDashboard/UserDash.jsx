@@ -1,12 +1,6 @@
 import { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import SidebarDash from '../SidebarDash/SidebarDash';
-import { CiUser } from "react-icons/ci";
-import { IoPhonePortraitOutline } from "react-icons/io5";
-import { MdMailOutline } from "react-icons/md";
-import { CiLocationOn } from "react-icons/ci";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { MdKey } from "react-icons/md";
 import './UserDash.css'
 import './mediaUserDash.css'
 
@@ -52,30 +46,17 @@ function UserDashboard() {
           </div>
 
           <div className="container-inputs-user-dash">
+            <input type="text" className="inputs-user-dash" placeholder='نام خانوادگی' />
 
-            <div>
-              <input type="text" className="inputs-user-dash" placeholder='نام خانوادگی' />
-              <CiUser className='icons-inputs-user-dash' size={20} />
+            <input type="text" className="inputs-user-dash" placeholder='نام' />
 
-              <input type="text" className="inputs-user-dash" placeholder='نام' />
-              <CiUser className='icons-inputs-user-dash' size={20} />
-            </div>
+            <input type="email" className="inputs-user-dash" placeholder='ایمیل' />
 
-            <div>
-              <input type="email" className="inputs-user-dash" placeholder='ایمیل' />
-              <MdMailOutline className='icons-inputs-user-dash' size={20} />
+            <input type="text" className="inputs-user-dash" placeholder='شماره تلفن' />
 
-              <input type="text" className="inputs-user-dash" placeholder='شماره تلفن' />
-              <IoPhonePortraitOutline className='icons-inputs-user-dash' size={20} />
-            </div>
+            <input type="text" className="inputs-user-dash" placeholder='شماره منزل' />
 
-            <div>
-              <input type="text" className="inputs-user-dash" placeholder='شماره منزل' />
-              <MdOutlineLocalPhone className='icons-inputs-user-dash' size={20} />
-
-              <input type="text" className="inputs-user-dash" placeholder='آدرس منزل' />
-              <CiLocationOn className='icons-inputs-user-dash' size={20} />
-            </div>
+            <input type="text" className="inputs-user-dash" placeholder='آدرس منزل' />
           </div>
 
           <h3 className="title-change-user-pass">تغییر رمز عبور</h3>
@@ -83,7 +64,6 @@ function UserDashboard() {
             <button className="btn-save-changes">ذخیره اطلاعات</button>
 
             <input type="password" className="input-change-user-pass" placeholder='رمز عبور جدید را وارد کنید' />
-            <MdKey className='icon-input-change-user-pass' size={20} />
           </div>
 
         </div>
