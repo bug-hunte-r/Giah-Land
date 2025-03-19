@@ -1,19 +1,18 @@
 .container-sidebar{
-    width: 396px;
+    width: 220px;
     float: right;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: end;
+    border-left: 1px solid #EFEFEF;
 }
 
 .container-user-info-sidebar{
-    width: 264px;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 8px;
-    background-color: blue;
 }
 
 .img-user-sidebar{
@@ -35,9 +34,49 @@
 }
 
 .container-btns-sidebar{
-    background-color: blue;
-    width: 264px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 50px;
+}
+
+.btns-sidebar{
+    border: none;
+    color: #505050;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btns-sidebar:hover{
+    background-color: #F3FDFA;
+    color: #417F56;
+}
+
+.sidebar-btn-active {
+    background-color: #F3FDFA;
+    color: #417F56;
+}
+
+.logOut-sidebar{
+    color: #ED2E2E;
+    background-color: #FFF2F2;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    margin-top: 400px;
 }

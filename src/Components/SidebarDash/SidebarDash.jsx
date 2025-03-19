@@ -20,12 +20,12 @@ export default function SidebarDash() {
                 </div>
 
                 <div className="container-btns-sidebar">
-                    <button className="btns-sidebar">مشخصات حساب کاربری <FaRegUser /> </button>
-                    <button className="btns-sidebar">مشاوره با گیاه پزشک <BiPlusMedical /> </button>
-                    <button className="btns-sidebar">پیام های دریافتی <MdMailOutline /> </button>
+                    <button className="btns-sidebar sidebar-btn-active">مشخصات حساب کاربری <FaRegUser size={17} /> </button>
+                    <button className="btns-sidebar">مشاوره با گیاه پزشک <BiPlusMedical size={17} /> </button>
+                    <button className="btns-sidebar">پیام های دریافتی <MdMailOutline size={19} /> </button>
                 </div>
 
-                <button className="logOut-sidebar">خروج از حساب کاربری <FiLogOut /> </button>
+                <button className="logOut-sidebar">خروج از حساب کاربری <FiLogOut size={17}/> </button>
             </div>
         </div>
     )
