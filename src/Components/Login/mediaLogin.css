@@ -1,0 +1,305 @@
+@media only screen and (max-width: 1400px) {
+
+    .container {
+        width: 1100px;
+    }
+
+    .form-login {
+        width: 1100px;
+    }
+
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .container {
+        width: 1000px;
+    }
+
+    .form-login {
+        width: 1000px;
+        padding-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+
+    .container {
+        width: 920px;
+    }
+
+    .form-login {
+        width: 920px;
+        padding-right: 30px;
+    }
+    
+    .container-img-login{
+        width: 480px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .container {
+        width: 850px;
+    }
+
+    .form-login {
+        width: 850px;
+        padding-right: 20px;
+    }
+    
+    .container-img-login{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container {
+        width: 800px;
+    }
+
+    .form-login {
+        width: 800px;
+        padding-right: 20px;
+    }
+    
+    .container-img-login{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .container {
+        width: 750px;
+    }
+
+    .form-login {
+        width: 750px;
+    }
+    
+    .container-img-login{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        width: 700px;
+    }
+
+    .form-login {
+        width: 700px;
+    }
+    
+    .container-img-login{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .container {
+        width: 600px;
+    }
+
+    .form-login {
+        width: 600px;
+    }
+    
+    .container-img-login{
+        width: 300px;
+    }
+
+    .container-inputs{
+        width: 250px;
+    }
+
+    .inputs-login{
+        font-size: 13px;
+    }
+    
+    .btn-login{
+        width: 250px;
+    }
+
+    .icon-input-login{
+        left: 220px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .container {
+        width: 550px;
+    }
+
+    .form-login {
+        width: 550px;
+    }
+    
+    .container-img-login{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        width: 500px;
+    }
+
+    .form-login {
+        width: 500px;
+        flex-direction: column;
+        border-radius: 10px;
+        padding-right: 0;
+    }
+
+    .container-img-login{
+        width: 500px;
+        height: 450px;
+    }
+    
+    .img-login{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .container-inputs{
+        width: 400px;
+    }
+
+    .btn-login{
+        width: 400px;
+    }
+
+    .icon-input-login{
+        left: 370px;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .container {
+        width: 450px;
+    }
+    
+    .form-login{
+        width: 450px;
+    }
+
+    .container-img-login{
+        width: 450px;
+    }
+
+    .container-inputs{
+        width: 350px;
+    }
+
+    .btn-login{
+        width: 350px;
+    }
+
+    .icon-input-login{
+        left: 320px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container {
+        width: 400px;
+    }
+    
+    .form-login{
+        width: 400px;
+    }
+
+    .container-img-login{
+        width: 400px;
+    }
+
+    .container-inputs{
+        width: 300px;
+    }
+
+    .btn-login{
+        width: 300px;
+    }
+
+    .icon-input-login{
+        left: 270px;
+    }
+
+    .link-go-to-login{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .container {
+        width: 350px;
+    }
+    
+    .form-login{
+        width: 350px;
+    }
+
+    .container-img-login{
+        width: 350px;
+        height: 400px;
+    }
+
+    .container-inputs{
+        width: 250px;
+    }
+
+    .btn-login{
+        width: 250px;
+    }
+
+    .icon-input-login{
+        left: 220px;
+    }
+
+    .link-go-to-login{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .container {
+        width: 300px;
+    }
+    
+    .form-login{
+        width: 300px;
+    }
+
+    .container-img-login{
+        width: 300px;
+    }
+
+    .container-inputs{
+        width: 200px;
+    }
+
+    .btn-login{
+        width: 200px;
+    }
+
+    .icon-input-login{
+        left: 170px;
+    }
+
+    .link-go-to-login{
+        font-size: 12px;
+    }
+}
