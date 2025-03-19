@@ -7,6 +7,8 @@ import { MdMailOutline } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { MdKey } from "react-icons/md";
+import './UserDash.css'
+import './mediaUserDash.css'
 
 const socket = io('https://giah-land-websocket.onrender.com');
 
@@ -42,38 +44,49 @@ function UserDashboard() {
         <h2 className="title-user-info-dash">مشخصات حساب کاربری</h2>
 
         <div className="container-edit-user-info">
+
           <div className="container-edit-user-img">
-            <img src="/Imgs/my-img 2.webp" />
-            <button className="btn-edit-user-img">ویرایش تصویر</button>
             <button className="btn-delete-user-img">حذف تصویر</button>
+            <button className="btn-edit-user-img">ویرایش تصویر</button>
+            <img src="/Imgs/my-img 2.webp" className='img-user-dash' />
           </div>
 
           <div className="container-inputs-user-dash">
-            <input type="text" className="inputs-user-dash" placeholder='نام' />
-            <CiUser />
 
-            <input type="text" className="inputs-user-dash" placeholder='نام خانوادگی' />
-            <CiUser />
+            <div>
+              <input type="text" className="inputs-user-dash" placeholder='نام خانوادگی' />
+              <CiUser className='icons-inputs-user-dash' size={20} />
 
-            <input type="text" className="inputs-user-dash" placeholder='شماره تلفن' />
-            <IoPhonePortraitOutline />
+              <input type="text" className="inputs-user-dash" placeholder='نام' />
+              <CiUser className='icons-inputs-user-dash' size={20} />
+            </div>
 
-            <input type="email" className="inputs-user-dash" placeholder='ایمیل' />
-            <MdMailOutline />
-            <input type="text" className="inputs-user-dash" placeholder='آدرس منزل' />
-            <CiLocationOn />
+            <div>
+              <input type="email" className="inputs-user-dash" placeholder='ایمیل' />
+              <MdMailOutline className='icons-inputs-user-dash' size={20} />
 
-            <input type="text" className="inputs-user-dash" placeholder='شماره منزل' />
-            <MdOutlineLocalPhone />
+              <input type="text" className="inputs-user-dash" placeholder='شماره تلفن' />
+              <IoPhonePortraitOutline className='icons-inputs-user-dash' size={20} />
+            </div>
+
+            <div>
+              <input type="text" className="inputs-user-dash" placeholder='شماره منزل' />
+              <MdOutlineLocalPhone className='icons-inputs-user-dash' size={20} />
+
+              <input type="text" className="inputs-user-dash" placeholder='آدرس منزل' />
+              <CiLocationOn className='icons-inputs-user-dash' size={20} />
+            </div>
           </div>
 
+          <h3 className="title-change-user-pass">تغییر رمز عبور</h3>
           <div className="container-chnage-user-pass">
-            <input type="password" className="input-change-user-pass" placeholder='رمز عبور جدید را وارد کنید' />
-            <MdKey />
             <button className="btn-save-changes">ذخیره اطلاعات</button>
-          </div>
-        </div>
 
+            <input type="password" className="input-change-user-pass" placeholder='رمز عبور جدید را وارد کنید' />
+            <MdKey className='icon-input-change-user-pass' size={20} />
+          </div>
+
+        </div>
       </div>
     </div>
   );

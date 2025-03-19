@@ -1,0 +1,143 @@
+.container{
+    width: 1100px;
+}
+
+.container-user-info-dash{
+    width: 840px;
+}
+
+.title-user-info-dash{
+    text-align: right;
+    color: #121212;
+    font-size: 16px;
+}
+
+.title-user-info-dash::before{
+    content: '';
+    width: 25px;
+    height: 2px;
+    float: right;
+    background-color: #417F56;
+    transform: rotate(90deg);
+    margin-top: 13px;
+}
+
+.container-edit-user-img{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: end;
+    margin-top: 40px;
+}
+
+.img-user-dash{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+.btn-edit-user-img{
+    font-size: 14px;
+    background-color: #417F56;
+    color: white;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+.btn-delete-user-img{
+    font-size: 14px;
+    color: #417F56;
+    background-color: white;
+    border: 1px solid #417F56;
+    height: 35px;
+    border-radius: 15px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.container-inputs-user-dash{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.inputs-user-dash{
+    width: 400px;
+    text-align: right;
+    padding-right: 30px;
+    height: 40px;
+    color: #717171;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+}
+
+.icons-inputs-user-dash{
+    color: #717171;
+    position: relative;
+    top: 5px;
+    right: 25px;
+}
+
+.title-change-user-pass{
+    text-align: right;
+    font-size: 16px;
+    color: #121212;
+    margin-top: 50px;
+}
+
+.title-change-user-pass::before{
+    content: '';
+    width: 25px;
+    height: 2px;
+    float: right;
+    background-color: #417F56;
+    transform: rotate(90deg);
+    margin-top: 13px;
+}
+
+.container-chnage-user-pass{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.input-change-user-pass{
+    width: 400px;
+    text-align: right;
+    padding-right: 30px;
+    height: 40px;
+    color: #717171;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+}
+
+.icon-input-change-user-pass{
+    color: #717171;
+    position: relative;
+    right: 25px;
+}
+
+.btn-save-changes{
+    background-color: #417F56;
+    border: none;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 300px;
+    cursor: pointer;
+}
