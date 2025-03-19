@@ -6,6 +6,7 @@ import Dashboard from './Components/Dashboard/Dashboard'
 import ChatPage from './Components/ChatPage/ChatPage';
 import SignUp from './Components/SignUp/SignUp';
 import Header from './Components/Header/Header';
+import Login from './Components/Login/Login';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/chat" element={<ChatPage />} />
         <Route path="/signUp" element={<SignUp />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
 
     </div>

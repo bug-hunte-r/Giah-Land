@@ -32,7 +32,7 @@ export default function SignUp() {
 
                     <button className='btn-sign-up'>ثبت نام</button>
 
-                    <p className="link-go-to-login">حساب کاربری دارید؟ <Link to={'/'} className='Link-go-to-sign-in'>ورود</Link> کنید</p>
+                    <p className="link-go-to-login">حساب کاربری دارید؟ <Link to={'/Login'} className='Link-go-to-sign-in'>ورود</Link> کنید</p>
                 </div>
             </form>
         </div>
