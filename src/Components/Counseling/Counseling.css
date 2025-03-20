@@ -1,0 +1,76 @@
+.container{
+    width: 1100px;
+}
+
+.container-counseling{
+    width: 840px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.title-counseling{
+    color: #121212;
+    font-size: 16px;
+}
+
+.title-counseling::before{
+    content: '';
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    background-color: #417F56;
+    transform: rotate(90deg);
+    margin-top: 13px;
+    margin-left: 125px;
+}
+
+.box-add-img-counseling{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    background-color: #F6F6F6;
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    gap: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.input-ask-problem-counseling{
+    width: 820px;
+    height: 130px;
+    margin-top: 50px;
+    border: 1px solid #CBCBCB;
+    background-color: #F6F6F6;
+    color: #353535;
+    font-size: 17px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-ask-problem-counseling::placeholder{
+    position: relative;
+    bottom: 40px;
+}
+
+.btn-send-problems{
+    background-color: #417F56;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    pad: 5px;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    margin-top: 50px;
+    cursor: pointer;
+}

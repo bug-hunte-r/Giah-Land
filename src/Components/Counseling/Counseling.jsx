@@ -13,11 +13,11 @@ export default function Counseling() {
         <div className="container-counseling">
             <h3 className="title-counseling">مشاوره با گیاه پزشک</h3>
             <div className="box-add-img-counseling">
-                <LuCopyPlus />
+                <LuCopyPlus size={25} />
                 آپلود تصویر گیاه
             </div>
 
-            <input className='input-ask-problem-counseling' placeholder='توضیح درباره مشکل گیاه'></input>
+            <input className='input-ask-problem-counseling' placeholder=':توضیح درباره مشکل گیاه'></input>
 
             <button className='btn-send-problems'>ارسال</button>
         </div>
