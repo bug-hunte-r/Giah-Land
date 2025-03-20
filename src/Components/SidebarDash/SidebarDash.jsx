@@ -23,7 +23,7 @@ export default function SidebarDash() {
                 <div className="container-btns-sidebar">
                     <Link to={'/userDashboard'} className='link-sidebar'> <button className="btns-sidebar sidebar-btn-active">مشخصات حساب کاربری <FaRegUser size={17} className='icons-sidebar' /> </button> </Link>
                     <Link to={'/counseling'} className='link-sidebar'> <button className="btns-sidebar">مشاوره با گیاه پزشک <BiPlusMedical size={17} className='icons-sidebar' /> </button> </Link>
-                    <Link to={'/counseling'} className='link-sidebar'> <button className="btns-sidebar">پیام های دریافتی <MdMailOutline size={19} className='icons-sidebar' /> </button> </Link>
+                    <Link to={'/chat'} className='link-sidebar'> <button className="btns-sidebar">پیام های دریافتی <MdMailOutline size={19} className='icons-sidebar' /> </button> </Link>
                 </div>
 
                 <button className="logOut-sidebar">خروج از حساب کاربری <FiLogOut size={17} className='icon-logout-sidebar'/> </button>

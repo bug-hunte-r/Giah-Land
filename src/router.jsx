@@ -9,11 +9,11 @@ import Counseling from "./Components/Counseling/Counseling"
 let router = [
     { path: "/", element: <Home /> },
     { path: "/dashboard", element: <Dashboard /> },
-    { path: '/chat', element: <ChatPage /> },
     { path: '/userDashboard', element: <UserDashboard /> },
     { path: "/signUp", element: <SignUp /> },
     { path: "/login", element: <Login /> },
     { path: "/counseling", element: <Counseling />},
+    { path: '/chat', element: <ChatPage /> },
 ]
 
 export default router

@@ -1,7 +1,12 @@
 import React from 'react'
+import './ChatPage.css'
+import './mediaChatPage.css'
+import SidebarDash from '../SidebarDash/SidebarDash'
 
 export default function ChatPage() {
   return (
-    <div>ChatPage</div>
+    <div className='container'>
+      <SidebarDash />
+    </div>
   )
 }
