@@ -1,0 +1,23 @@
+.container-chat-page{
+    width: 840px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title-chat-page{
+    text-align: right;
+    color: #121212;
+    font-size: 16px;
+}
+
+.title-chat-page::before{
+    content: '';
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    background-color: #417F56;
+    transform: rotate(90deg);
+    margin-top: 13px;
+    margin-left: 103px;
+}

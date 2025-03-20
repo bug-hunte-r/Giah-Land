@@ -11,7 +11,8 @@ export default function ChatPage() {
 
       <div className="container-chat-page">
         <h3 className="title-chat-page">پیام های دریافتی</h3>
-
+        <Chats />
+        <Chats />
         <Chats />
       </div>
     </div>
