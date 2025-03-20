@@ -1,5 +1,6 @@
 import React from 'react'
 import './Chats.css'
+import './mediaChats.css'
 import { FaChevronLeft } from "react-icons/fa";
 
 

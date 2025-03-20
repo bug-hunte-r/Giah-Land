@@ -1,0 +1,91 @@
+@media only screen and (max-width: 1150px) {
+
+    .container-chat-page {
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+
+    .container-chat-page {
+        width: 670px;
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+
+    .container-chat-page {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container-chat-page {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .container-chat-page{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container-chat-page {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .container-chat-page {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .container-chat-page {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container-chat-page {
+        width: 290px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .container-chat-page {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container-chat-page {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .container-chat-page {
+        width: 190px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .container-chat-page {
+        width: 160px;
+    }
+}
