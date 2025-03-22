@@ -13,7 +13,7 @@ export default function MainProduct() {
 
                 <div className="container-product-price-and-rate">
                     <p className="title-seller">فروشنده</p>
-                    <p className="seller"> <abbr style={{color: '#396F4B'}} >عالی</abbr>فلاور گاردن | عملکرد <BsShopWindow size={17} /></p>
+                    <p className="seller"> <abbr style={{ color: '#396F4B' }} >عالی</abbr>فلاور گاردن | عملکرد <BsShopWindow size={17} /></p>
                     <p className="rate">۴.۶</p>
                     <div className="container-price">
                         <p className="price">۵۶۰/۰۰۰ تومان</p>
@@ -45,13 +45,14 @@ export default function MainProduct() {
                             <p className="infos-box">۲۵۰x۲۵۰x۸۰۰</p>
                         </div>
 
-                    <button className="btn-see-all-infos">مشاهده همه ویژگی ها</button>
+
                         <div className="boxes-infos">
                             <p className="title-box">وضعیت نسبت به آفتاب</p>
                             <p className="infos-box">آفتاب دوست</p>
                         </div>
                     </div>
-                    
+                    <button className="btn-see-all-infos">مشاهده همه ویژگی ها</button>
+
                 </div>
 
                 <div className="container-main-product-img">

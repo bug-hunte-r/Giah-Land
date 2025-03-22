@@ -3,6 +3,7 @@
     justify-content: space-between;
     margin-top: 100px;
     align-items: center;
+    width: 100%;
 }
 
 .container-main-products-infos{
@@ -12,18 +13,19 @@
 .conatiner-ifos-boxes{
     display: grid;
     width: 430px;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 190px);
+    gap: 40px;
     justify-content: space-between;
-    margin-top: -40px;
+    align-items: center;
 }
 
 .boxes-infos{
-    width: 200px;
+    width: 190px;
     background-color: #f1f1f1;
     border-radius: 10px;
-    margin-top: 40px;
     padding-left: 10px;
     padding-right: 10px;
+    height: 70px;
 }
 
 .container-product-price-and-rate{
@@ -65,12 +67,13 @@
 
 .title-box{
     color: #353535;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .infos-box{
     color: #121212;
-    font-size: 16px;
+    font-size: 15px;
+    margin-top: -10px;
 }
 
 .btn-see-all-infos{
@@ -80,7 +83,7 @@
     border-radius: 10px;
     height: 40px;
     cursor: pointer;
-    margin-top: 90px;
+    margin-top: 30px;
     width: 150px;
 }
 
