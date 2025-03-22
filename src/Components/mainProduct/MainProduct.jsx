@@ -2,6 +2,7 @@ import './MainProduct.css'
 import './mediaMainProduct.css'
 import { MainProductContext } from '../../Context/MainProductContext'
 import { BsShopWindow } from "react-icons/bs";
+import SameProduct from './SameProduct/SameProduct';
 
 
 
@@ -59,6 +60,8 @@ export default function MainProduct() {
                     <img src="/Imgs/Frame 11.png" className='main-product-img' />
                 </div>
             </div>
+
+            <SameProduct />
         </div>
     )
 }
