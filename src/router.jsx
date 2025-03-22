@@ -15,7 +15,7 @@ let router = [
     { path: "/login", element: <Login /> },
     { path: "/counseling", element: <Counseling />},
     { path: '/chat', element: <ChatPage /> },
-    { path: '/mainProduct/:ProductId', element: <MainProduct /> },
+    { path: '/mainProduct/:ProductName', element: <MainProduct /> },
 ]
 
 export default router

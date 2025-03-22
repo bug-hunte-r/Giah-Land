@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import ProductCard from './../ProductCard/ProductCard';
 import './HousePlants.css';
@@ -6,6 +6,7 @@ import './mediaHousePlants.css';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { MainProductContext } from '../../../Context/MainProductContext';
 
 function NextArrow(props) {
     const { className, style, onClick } = props;
@@ -34,7 +35,6 @@ export default function HousePlants() {
     const [allproducts, setAllProducts] = useState();
     const [housePlants, setHousePlants] = useState();
 
-
     // Fetching data
     useEffect(() => {
         const getData = async () => {
@@ -53,7 +53,7 @@ export default function HousePlants() {
 
             let filtredHousePlants = productsObj.filter(product => product.category === 'آپارتمانی');
             setHousePlants(filtredHousePlants);
-        }
+        }        
     }, [allproducts]);
 
     // Slider settings
@@ -81,22 +81,22 @@ export default function HousePlants() {
             },
         ]
     };
-
-    const [titleHomely, setTitleHomely] = useState('گیاهان آپارتمانی')
-
+    
     return (
         <div className='container'>
-            <h1 className='title-slider'>{titleHomely}</h1>
+            <MainProductContext.Provider value={allproducts}>
+                <h1 className='title-slider'>گیاهان آپارتمانی</h1>
 
-            {housePlants && (
-                <Slider {...settings}>
-                    {housePlants.map((housePlant) => (
-                        <div key={housePlant.id} className="container-slider">
-                            <ProductCard name={housePlant.name} price={housePlant.price} image={housePlant.image} />
-                        </div>
-                    ))}
-                </Slider>
-            )}
+                {housePlants && (
+                    <Slider {...settings}>
+                        {housePlants.map((housePlant) => (
+                            <div key={housePlant.id} className="container-slider">
+                                <ProductCard name={housePlant.name} price={housePlant.price} image={housePlant.image} id={housePlant.id} />
+                            </div>
+                        ))}
+                    </Slider>
+                )}
+            </MainProductContext.Provider>
         </div>
     );
 }

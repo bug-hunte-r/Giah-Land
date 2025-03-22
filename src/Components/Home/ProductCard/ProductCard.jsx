@@ -12,7 +12,7 @@ export default function ProductCard(props) {
                 <p className="price-product">{props.price} تومان</p>
                 <p className="title-price">:قیمت</p>
             </div>
-            <Link> <button className='see-more-btn'>مشاهده بیشتر</button> </Link>
+            <Link to={`/mainProduct/${props.name}`}> <button className='see-more-btn'>مشاهده بیشتر</button> </Link>
         </div>
     )
 }
