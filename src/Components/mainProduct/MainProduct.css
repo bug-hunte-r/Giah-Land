@@ -1,0 +1,132 @@
+.container-mainProduct{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.container-main-products-infos{
+    text-align: right;
+}
+
+.conatiner-ifos-boxes{
+    display: grid;
+    width: 430px;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: space-between;
+    margin-top: -40px;
+}
+
+.boxes-infos{
+    width: 200px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-product-price-and-rate{
+    width: 250px;
+    text-align: right;
+    border: 1px solid #ADADAD;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #dfdfdf;
+}
+
+.title-main-product{
+    color: #417F56;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.name-main-product{
+    color: #212121;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid #dfdfdf;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.title-infos{
+    color: #212121;
+    font-size: 17px;
+    margin-top: 40px;
+}
+
+.title-box{
+    color: #353535;
+    font-size: 14px;
+}
+
+.infos-box{
+    color: #121212;
+    font-size: 16px;
+}
+
+.btn-see-all-infos{
+    background-color: white;
+    border: 1px solid #417F56;
+    color: #417F56;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 90px;
+    width: 150px;
+}
+
+.title-seller{
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.seller{
+    color: #212121;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+}
+
+.rate{
+    color: #212121;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.price{
+    color: #121212;
+    font-size: 18px;
+}
+
+.title-price{
+    color: #212121;
+    font-size: 16px;
+}
+
+.add-product-btn{
+    color: white;
+    background-color: #417F56;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    height: 35px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.main-product-img{
+    width: 300px;
+}
