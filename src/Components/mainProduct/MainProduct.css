@@ -147,6 +147,11 @@
     grid-template-columns: repeat(4, 260px);
     gap: 20px;
     justify-content: space-between;
+    margin-top: 50px;
+}
+
+.container-comments{
+    margin-top: 50px;
 }
 
 .title-comments{

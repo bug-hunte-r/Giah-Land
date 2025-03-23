@@ -14,6 +14,10 @@
     .container-same-products-cards{
         grid-template-columns: repeat(4, 230px);
     }
+
+    .container-comments{
+        width: 1000px;
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -41,6 +45,10 @@
 
     .container-same-products-cards{
         grid-template-columns: repeat(4, 210px);
+    }
+
+    .container-comments{
+        width: 920px;
     }
 }
 
@@ -89,6 +97,10 @@
         grid-template-columns: repeat(4, 190px);
     }
 
+    .container-comments{
+        width: 850px;
+    }
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -120,6 +132,10 @@
 
     .container-same-products-cards{
         grid-template-columns: repeat(4, 180px);
+    }
+
+    .container-comments{
+        width: 800px;
     }
 }
 
@@ -160,6 +176,10 @@
 
     .container-same-products-cards{
         grid-template-columns: repeat(4, 170px);
+    }
+
+    .container-comments{
+        width: 750px;
     }
 
 }
@@ -205,8 +225,8 @@
         justify-self: center;
     }
 
-    .title-same-product{
-        text-align: center;
+    .container-comments{
+        width: 700px;
     }
 }
 
@@ -237,6 +257,10 @@
 
     .main-product-img {
         width: 200px;
+    }
+
+    .container-comments{
+        width: 600px;
     }
 }
 
@@ -304,6 +328,10 @@
         font-size: 16px;
     }
 
+    .container-comments{
+        width: 550px;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -314,6 +342,14 @@
 
     .container-mainProduct {
         width: 500px;
+    }
+
+    .container-comments{
+        width: 500px;
+    }
+
+    .title-comments{
+        font-size: 20px;   
     }
 
 }
@@ -330,6 +366,10 @@
     .container-same-products-cards{
         width: 480px;
         grid-template-columns: repeat(2, 230px);
+    }
+
+    .container-comments{
+        width: 450px;
     }
 }
 
@@ -351,6 +391,10 @@
         width: 380px;
         grid-template-columns: repeat(2, 180px);
     }
+
+    .container-comments{
+        width: 400px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -367,6 +411,10 @@
         width: 350px;
         grid-template-columns: repeat(1, 230px);
         justify-content: center;
+    }
+
+    .container-comments{
+        width: 350px;
     }
 }
 
@@ -391,6 +439,10 @@
     }
 
     .container-same-products-cards{
+        width: 300px;
+    }
+
+    .container-comments{
         width: 300px;
     }
 }

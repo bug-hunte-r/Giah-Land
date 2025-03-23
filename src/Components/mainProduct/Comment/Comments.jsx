@@ -3,8 +3,6 @@ import './Comments.css'
 import './mediaComments.css'
 import { FaRegHeart } from "react-icons/fa";
 import { CgCornerUpRight } from "react-icons/cg";
-import { PiDotsThreeBold } from "react-icons/pi";
-
 
 export default function Comments() {
 
@@ -21,7 +19,6 @@ export default function Comments() {
         <div className='container-comment'>
             <div className="container-top-comment">
                 <div className="container-comment-side-left">
-                    <PiDotsThreeBold className='icon-comments' />
                     <CgCornerUpRight className='icon-comments' />
                     <FaRegHeart className={`icon-comments ${isLiked && 'liked'}`} onClick={likeCommentHandler} />
                     <p className="date-comment">۴ روز پیش</p>

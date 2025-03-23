@@ -1,0 +1,45 @@
+@media only screen and (max-width: 650px) {
+
+    .text-comment {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .img-user-in-comment {
+        width: 45px;
+        height: 45px;
+    }
+
+    .name-user-in-comment {
+        font-size: 13px;
+    }
+
+    .container-comment-side-left {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .img-user-in-comment {
+        width: 40px;
+        height: 40px;
+    }
+
+    .name-user-in-comment {
+        font-size: 11px;
+    }
+
+    .container-comment-user-info {
+        gap: 5px;
+    }
+
+    .text-comment{
+        padding-right: 0;
+    }
+
+}
