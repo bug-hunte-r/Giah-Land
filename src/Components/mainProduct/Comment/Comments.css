@@ -26,6 +26,7 @@
     color: #121212;
     font-size: 15px;
     font-weight: 500;
+    user-select: none;
 }
 
 .container-comment-side-left{
@@ -42,6 +43,7 @@
 .date-comment{
     color: #717171;
     font-size: 12px;   
+    user-select: none;
 }
 
 .text-comment{
@@ -51,4 +53,9 @@
     font-weight: 300;
     margin-top: 30px;
     padding-right: 60px;
+    user-select: none;
+}
+
+.liked{
+    color: red;
 }

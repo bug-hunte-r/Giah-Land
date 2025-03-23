@@ -1,20 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Comments.css'
 import './mediaComments.css'
-import { FaHeart } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { CgCornerUpRight } from "react-icons/cg";
 import { PiDotsThreeBold } from "react-icons/pi";
 
 
 export default function Comments() {
+
+    const [isLiked, setIsLiked] = useState(false)
+
+    let likeCommentHandler = () => {
+
+        setIsLiked(prevState => {
+            return prevState = !prevState
+        })
+    }
+
     return (
         <div className='container-comment'>
             <div className="container-top-comment">
                 <div className="container-comment-side-left">
                     <PiDotsThreeBold className='icon-comments' />
                     <CgCornerUpRight className='icon-comments' />
-                    <FaRegHeart className='icon-comments' />
+                    <FaRegHeart className={`icon-comments ${isLiked && 'liked'}`} onClick={likeCommentHandler} />
                     <p className="date-comment">۴ روز پیش</p>
                 </div>
 
