@@ -10,6 +10,10 @@
     .main-product-img {
         width: 270px;
     }
+
+    .container-same-products-cards{
+        grid-template-columns: repeat(4, 230px);
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -33,6 +37,10 @@
 
     .container-product-price-and-rate {
         width: 220px;
+    }
+
+    .container-same-products-cards{
+        grid-template-columns: repeat(4, 210px);
     }
 }
 
@@ -77,6 +85,10 @@
         font-size: 13px;
     }
 
+    .container-same-products-cards{
+        grid-template-columns: repeat(4, 190px);
+    }
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -104,6 +116,10 @@
 
     .infos-box {
         font-size: 12px;
+    }
+
+    .container-same-products-cards{
+        grid-template-columns: repeat(4, 180px);
     }
 }
 
@@ -142,6 +158,10 @@
         font-size: 13px;
     }
 
+    .container-same-products-cards{
+        grid-template-columns: repeat(4, 170px);
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -176,6 +196,16 @@
     }
 
     .name-main-product{
+        text-align: center;
+    }
+
+    .container-same-products-cards{
+        width: 500px;
+        grid-template-columns: repeat(2, 240px);
+        justify-self: center;
+    }
+
+    .title-same-product{
         text-align: center;
     }
 }
@@ -296,6 +326,11 @@
     .container-mainProduct {
         width: 450px;
     }
+
+    .container-same-products-cards{
+        width: 480px;
+        grid-template-columns: repeat(2, 230px);
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -311,6 +346,11 @@
     .add-product-btn{
         width: 50%;
     }
+
+    .container-same-products-cards{
+        width: 380px;
+        grid-template-columns: repeat(2, 180px);
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -321,6 +361,12 @@
 
     .container-mainProduct {
         width: 350px;
+    }
+
+    .container-same-products-cards{
+        width: 350px;
+        grid-template-columns: repeat(1, 230px);
+        justify-content: center;
     }
 }
 
@@ -342,5 +388,9 @@
 
     .boxes-infos {
         width: 135px;
+    }
+
+    .container-same-products-cards{
+        width: 300px;
     }
 }

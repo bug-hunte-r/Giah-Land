@@ -4,8 +4,6 @@ import { MainProductContext } from '../../Context/MainProductContext'
 import { BsShopWindow } from "react-icons/bs";
 import SameProduct from './SameProduct/SameProduct';
 
-
-
 export default function MainProduct() {
 
     return (
@@ -57,11 +55,17 @@ export default function MainProduct() {
                 </div>
 
                 <div className="container-main-product-img">
-                    <img src="/Imgs/Frame 11.png" className='main-product-img' />
+                    <img src="/Imgs/img-slider-decor.png" className='main-product-img' />
                 </div>
             </div>
 
-            <SameProduct />
+            <p className="title-same-product">گیاه های مشابه </p>
+            <div className="container-same-products-cards">
+                <SameProduct />
+                <SameProduct />
+                <SameProduct />
+                <SameProduct />
+            </div>
         </div>
     )
 }
