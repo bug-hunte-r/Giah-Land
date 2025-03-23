@@ -40,7 +40,7 @@ export default function Footer() {
                     <p className="desc-footer">گیاه لند سعی بر این دارد با ارائه خدمات نوین در حوزه فروش گیاهان باعث راحتی
                         شما در خرید انواع گیاه شود.تنوع گیاهان و همچنین ایجاد بستری مناسب برای مشاوره با گیاه پزشک از دیگر مزیت های گیاه لند میباشد.</p>
                     <div className="container-bottom-right-footer">
-                        <h1 className="phone-number">تلفن پشتیبانی:  0212۴44</h1>
+                        <h1 className="phone-number">تلفن پشتیبانی:  09149582533</h1>
                         <div className="container-social-icons">
                             < FaInstagram size={25} className='icons-footer'/>
                             <PiTelegramLogo size={25} className='icons-footer'/>

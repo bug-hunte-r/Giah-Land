@@ -4,6 +4,7 @@ import { MainProductContext } from '../../Context/MainProductContext'
 import { BsShopWindow } from "react-icons/bs";
 import SameProduct from './SameProduct/SameProduct';
 import Comments from './Comment/Comments';
+import Footer from '../Home/Footer/Footer';
 
 export default function MainProduct() {
 
@@ -75,6 +76,8 @@ export default function MainProduct() {
                 <Comments />
                 <Comments />
             </div>
+
+            <Footer />
         </div>
     )
 }
