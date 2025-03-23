@@ -26,7 +26,7 @@ export default function Header() {
 
         <div className="nav-side-left">
           <Link to={'./signUp'} className='link-sign-up-nav'><button className='login-btn'>ورود/ثبت نام <CiLogin size={24} /></button></Link>
-          <MdOutlineShoppingCart size={35} className='icon-basket-nav' />
+          <Link to={'./cart'} className='link-cart-nav'><MdOutlineShoppingCart size={35} className='icon-basket-nav' /></Link>
           <IoIosSearch size={35} className='icon-search-nav' />
         </div>
 

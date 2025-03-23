@@ -6,6 +6,7 @@ import SignUp from "./Components/SignUp/SignUp"
 import Login from "./Components/Login/Login"
 import Counseling from "./Components/Counseling/Counseling"
 import MainProduct from "./Components/mainProduct/MainProduct"
+import Cart from "./Components/Cart/Cart"
 
 let router = [
     { path: "/", element: <Home /> },
@@ -16,6 +17,7 @@ let router = [
     { path: "/counseling", element: <Counseling />},
     { path: '/chat', element: <ChatPage /> },
     { path: '/mainProduct/:ProductName', element: <MainProduct /> },
+    { path: '/Cart', element: <Cart /> },
 ]
 
 export default router

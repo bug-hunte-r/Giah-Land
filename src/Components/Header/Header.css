@@ -113,6 +113,10 @@
    text-decoration: none;
 }
 
+.link-cart-nav{
+   margin-top: 8px;
+}
+
 .icon-login{
    margin-left: 10px;
 }
