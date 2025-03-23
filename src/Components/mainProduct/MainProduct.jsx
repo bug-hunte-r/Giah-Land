@@ -71,6 +71,9 @@ export default function MainProduct() {
             <p className="title-comments">دیدگاه ها و امتیاز</p>
             <div className="container-comments">
                 <Comments />
+                <Comments />
+                <Comments />
+                <Comments />
             </div>
         </div>
     )

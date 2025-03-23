@@ -148,3 +148,10 @@
     gap: 20px;
     justify-content: space-between;
 }
+
+.title-comments{
+    text-align: right;
+    color: #121212;
+    font-size: 22px;
+    margin-top: 100px;
+}
