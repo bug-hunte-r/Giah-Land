@@ -7,6 +7,8 @@ import Modal from '../Modal/Modal';
 
 export default function Cart() {
 
+    const [isShowModal, setIsShowModal] = useState(false)
+
     const [productCount, setProductCount] = useState(1)
     let priceProduct = 560000
 
@@ -24,9 +26,21 @@ export default function Cart() {
         )
     }
 
+    let buyProductHandler = () => {
+        setIsShowModal(true)
+
+        setProductCount(1)
+    }
+
+    setTimeout(() => {
+        setIsShowModal(false)
+    }, 4000)
+
     return (
         <div className='container'>
-
+            {isShowModal && (
+                <Modal />
+            )}
             <h3 className='title-cart'>سبد خرید</h3>
 
             <div className="container-carts-sides">
@@ -46,7 +60,7 @@ export default function Cart() {
                     </div>
                     <input type="text" placeholder='کد تخفیف' className='input-off-code' />
                     <br />
-                    <button className='buy-product-btn'>سفارش</button>
+                    <button className='buy-product-btn' onClick={buyProductHandler}>سفارش</button>
                 </div>
 
                 <div className="container-cart-right">
