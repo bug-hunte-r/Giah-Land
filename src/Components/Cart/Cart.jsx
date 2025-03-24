@@ -15,15 +15,13 @@ export default function Cart() {
     let totalPrice = productCount * priceProduct
 
     let minusProductCountHandler = () => {
-        setProductCount(
-            productCount - 1
-        )
+        if (productCount > 1) {
+            setProductCount(productCount - 1)
+        }
     }
 
     let plusProductCountHandler = () => {
-        setProductCount(
-            productCount + 1
-        )
+        setProductCount(productCount + 1)
     }
 
     let buyProductHandler = () => {
@@ -41,8 +39,8 @@ export default function Cart() {
             {isShowModal && (
                 <Modal />
             )}
-            <h3 className='title-cart'>سبد خرید</h3>
 
+            <h3 className='title-cart'>سبد خرید</h3>
             <div className="container-carts-sides">
 
                 <div className="container-cart-left">
