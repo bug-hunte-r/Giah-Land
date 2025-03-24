@@ -4,6 +4,7 @@ import { FaMinus } from "react-icons/fa6";
 import './Cart.css'
 import './mediaCart.css'
 import Modal from '../Modal/Modal';
+import Footer from '../Home/Footer/Footer';
 
 export default function Cart() {
 
@@ -80,6 +81,7 @@ export default function Cart() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
