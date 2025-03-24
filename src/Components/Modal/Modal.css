@@ -1,12 +1,11 @@
-.container-modal{
+.modal{
     width: 200px;
     background-color: #417F56;
     border: 1px solid white;
     border-radius: 3px;
     text-align: center;
     position: absolute;
-    top: 130px;
-    left: 980px;
+    top: 140px;
 }
 
 .title-modal{
