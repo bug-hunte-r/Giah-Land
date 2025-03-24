@@ -78,6 +78,7 @@
 .count-product {
     color: #212121;
     font-size: 18px;
+    user-select: none;
 }
 
 .icon-remove-product {

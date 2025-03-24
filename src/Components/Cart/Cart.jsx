@@ -1,23 +1,43 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
 import './Cart.css'
 import './mediaCart.css'
+import Modal from '../Modal/Modal';
 
 export default function Cart() {
+
+    const [productCount, setProductCount] = useState(1)
+    let priceProduct = 560000
+
+    let totalPrice = productCount * priceProduct
+
+    let minusProductCountHandler = () => {
+        setProductCount(
+            productCount - 1
+        )
+    }
+
+    let plusProductCountHandler = () => {
+        setProductCount(
+            productCount + 1
+        )
+    }
+
     return (
         <div className='container'>
+
             <h3 className='title-cart'>سبد خرید</h3>
 
             <div className="container-carts-sides">
 
                 <div className="container-cart-left">
                     <div className="container-count-product-side-left">
-                        <h3 className="count-side-left">۱</h3>
+                        <h3 className="count-side-left">{productCount}</h3>
                         <h3 className="title-count-side-left">:تعداد گیاه</h3>
                     </div>
                     <div className="container-price-side-left">
-                        <h3 className="price-side-left">۵۶۰/۰۰۰ تومان</h3>
+                        <h3 className="price-side-left">{totalPrice} تومان</h3>
                         <h3 className="title-price-side-left">:مجموع سبد خرید</h3>
                     </div>
                     <div className="container-send-from">
@@ -38,9 +58,9 @@ export default function Cart() {
                             <h3 className="title-price-cart">:قیمت</h3>
                         </div>
                         <div className="div-add-and-remove-product">
-                            <FaMinus className='icon-remove-product' />
-                            <p className="count-product">1</p>
-                            <FaPlus className='icon-add-product' />
+                            <FaMinus className='icon-remove-product' onClick={minusProductCountHandler} />
+                            <p className="count-product">{productCount}</p>
+                            <FaPlus className='icon-add-product' onClick={plusProductCountHandler} />
                         </div>
                     </div>
                     <div className="container-img-product-cart">
