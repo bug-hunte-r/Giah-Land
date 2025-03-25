@@ -17,7 +17,7 @@ export default function SidebarDash() {
                         <h3 className="username-sidebar">شایان جعفرنژاد</h3>
                         <h3 className="user-phone-sidebar">09149582599</h3>
                     </div>
-                    <img src="/Imgs/my-img 2.webp" className='img-user-sidebar' />
+                    <img src="/Imgs/img-default-user.png" className='img-user-sidebar' />
                 </div>
 
                 <div className="container-btns-sidebar">

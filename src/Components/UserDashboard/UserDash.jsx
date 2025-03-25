@@ -42,7 +42,7 @@ function UserDashboard() {
           <div className="container-edit-user-img">
             <button className="btn-delete-user-img">حذف تصویر</button>
             <button className="btn-edit-user-img">ویرایش تصویر</button>
-            <img src="/Imgs/my-img 2.webp" className='img-user-dash' />
+            <img src="/Imgs/img-default-user.png" className='img-user-dash' />
           </div>
 
           <div className="container-inputs-user-dash">
