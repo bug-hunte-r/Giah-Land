@@ -1,5 +1,5 @@
 import React from 'react'
-import './DecorativepPlantsCard.css'
+import './GiftPlantsCards.css'
 import './../HousePlants/mediaHousePlants.css'
 import { Link } from 'react-router-dom'
 
