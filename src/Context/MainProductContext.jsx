@@ -5,7 +5,7 @@ const MainProductContext = createContext(null)
 export function MainProductsProvider({children}) {
    const [allProducts, setAllProducts] = useState([]);
    const [housePlants, setHousePlants] = useState([])
-   const [loading, setLoading] = useState(false);
+   const [loading, setLoading] = useState(false)
 
    useEffect(() => {
       fetchProucts()
