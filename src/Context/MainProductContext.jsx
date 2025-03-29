@@ -6,6 +6,7 @@ export function MainProductsProvider({children}) {
    const [allProducts, setAllProducts] = useState([]);
    const [housePlants, setHousePlants] = useState([])
    const [loading, setLoading] = useState(false)
+   
 
    useEffect(() => {
       fetchProucts()

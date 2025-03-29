@@ -6,7 +6,7 @@ import './mediaHousePlants.css';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { MainProductContext, useMainProducts } from '../../../Context/MainProductContext';
+import {  useMainProducts } from '../../../Context/MainProductContext';
 
 function NextArrow(props) {
     const { className, style, onClick } = props;
