@@ -6,7 +6,7 @@ import './mediaHousePlants.css';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { MainProductContext } from '../../../Context/MainProductContext';
+import { MainProductContext, useMainProducts } from '../../../Context/MainProductContext';
 
 function NextArrow(props) {
     const { className, style, onClick } = props;
@@ -31,31 +31,7 @@ function PrevArrow(props) {
 }
 
 export default function HousePlants() {
-
-    const [allproducts, setAllProducts] = useState();
-    const [housePlants, setHousePlants] = useState();
-
-    // Fetching data
-    useEffect(() => {
-        const getData = async () => {
-            const res = await fetch('https://giahland-api.vercel.app/api/products');
-            const ProductData = await res.json();
-            setAllProducts(ProductData);
-        };
-
-        getData();
-    }, []);
-
-    // Filtering products
-    useEffect(() => {
-        if (allproducts) {
-            let productsObj = allproducts.products;
-
-            let filtredHousePlants = productsObj.filter(product => product.category === 'آپارتمانی');
-            setHousePlants(filtredHousePlants);
-        }        
-    }, [allproducts]);
-
+    const {housePlants, allProducts} = useMainProducts()
     // Slider settings
     const settings = {
         infinite: true,
@@ -84,7 +60,7 @@ export default function HousePlants() {
     
     return (
         <div className='container'>
-            <MainProductContext.Provider value={allproducts}>
+
                 <h1 className='title-slider'>گیاهان آپارتمانی</h1>
 
                 {housePlants && (
@@ -96,7 +72,6 @@ export default function HousePlants() {
                         ))}
                     </Slider>
                 )}
-            </MainProductContext.Provider>
         </div>
     );
 }
