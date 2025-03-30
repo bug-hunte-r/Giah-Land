@@ -31,7 +31,7 @@ function PrevArrow(props) {
 }
 
 export default function DecorativepPlants() {
-  const { DecorativepPlants } = useMainProducts()
+  const { decorativePlants } = useMainProducts()
   // Slider settings
   const settings = {
     infinite: true,
@@ -61,13 +61,13 @@ export default function DecorativepPlants() {
   return (
     <div className='container'>
 
-      <h1 className='title-slider'>گیاهان آپارتمانی</h1>
+      <h1 className='title-slider'>گیاهان تزئینی</h1>
 
-      {DecorativepPlants && (
+      {decorativePlants && (
         <Slider {...settings}>
-          {DecorativepPlants.map((DecorativepPlant) => (
-            <div key={DecorativepPlant.id} className="container-slider">
-              <ProductCard {...DecorativepPlant} />
+          {decorativePlants.map((decorativepPlant) => (
+            <div key={decorativepPlant.id} className="container-slider">
+              <ProductCard {...decorativepPlant} />
             </div>
           ))}
         </Slider>
