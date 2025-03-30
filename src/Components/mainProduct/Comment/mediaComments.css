@@ -21,6 +21,10 @@
     .container-comment-side-left {
         gap: 10px;
     }
+
+    .text-comment{
+        padding-right: 50px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -39,7 +43,11 @@
     }
 
     .text-comment{
-        padding-right: 0;
+        padding-right: 45px;
+        margin-top: 20px;
     }
 
+    .date-comment{
+        font-size: 10px;
+    }
 }
