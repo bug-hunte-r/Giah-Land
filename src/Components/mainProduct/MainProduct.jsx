@@ -1,6 +1,5 @@
 import './MainProduct.css'
 import './mediaMainProduct.css'
-import { MainProductContext } from '../../Context/MainProductContext'
 import { BsShopWindow } from "react-icons/bs";
 import SameProduct from './SameProduct/SameProduct';
 import Comments from './Comment/Comments';

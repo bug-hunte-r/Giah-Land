@@ -1,8 +1,8 @@
-.container{
+.container {
     width: 1100px;
 }
 
-.form-sign-up{
+.form-sign-up {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,19 +13,19 @@
     padding-right: 100px;
 }
 
-.container-img-sign-up{
+.container-img-sign-up {
     width: 530px;
     height: 580px;
 }
 
-.img-sign-up{
+.img-sign-up {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(60%);
 }
 
-.container-inputs{
+.container-inputs {
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -34,30 +34,30 @@
     justify-content: center;
 }
 
-.title-form{
+.title-form {
     color: #121212;
     font-size: 20px;
 }
 
-.inputs-sign-up{
+.inputs-sign-up {
     text-align: right;
     padding-right: 40px;
     height: 40px;
-    color: #717171;
     font-size: 15px;
     outline: none;
     border: 1px solid #CBCBCB;
     border-radius: 10px;
+    color: #121212;
 }
 
-.icon-input-sign-up{
+.icon-input-sign-up {
     color: #717171;
     position: relative;
     bottom: 30px;
     left: 320px;
 }
 
-.btn-sign-up{
+.btn-sign-up {
     width: 350px;
     color: white;
     border-radius: 10px;
@@ -68,13 +68,13 @@
     cursor: pointer;
 }
 
-.link-go-to-login{
+.link-go-to-login {
     text-align: center;
     color: #121212;
     font-size: 16px;
 }
 
-.Link-go-to-sign-in{
+.Link-go-to-sign-in {
     color: #417F56;
     text-decoration: none;
 }
