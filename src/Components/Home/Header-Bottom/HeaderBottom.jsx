@@ -2,6 +2,7 @@ import React from 'react'
 import './HeaderBottom.css'
 import './mediaHeaderBottom.css'
 import { FaArrowLeft } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 export default function HeaderBottom() {
@@ -18,7 +19,7 @@ export default function HeaderBottom() {
           <p className="desc-header-bottom">با گیاه لند،آنلاین گیاه خودت رو سفارش بده و از تخفیف های ویژه استفاده کن.علاوه بر اینها میتونی به صورت رایگان از گیاه پزشک سایت مشاوره بگیری.</p>
           <div className="container-buttons">
             <button className='btn-off-flower'>گیاهان تخفیف دار</button>
-            <button className='btn-conference'>مشاوره با گیاه پزشک <FaArrowLeft /></button>
+            <Link to={'./counseling'} className='btn-conference'>مشاوره با گیاه پزشک <FaArrowLeft /></Link>
           </div>
           <div className="flowers-count-container">
             <div className="homely-flower">
