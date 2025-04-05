@@ -63,7 +63,7 @@ export default function HousePlants() {
 
                 <h1 className='title-slider'>گیاهان آپارتمانی</h1>
 
-                {housePlants && (
+                {housePlants.length != 0 ? (
                     <Slider {...settings}>
                         {housePlants.map((housePlant) => (
                             <div key={housePlant.id} className="container-slider">
@@ -71,6 +71,8 @@ export default function HousePlants() {
                             </div>
                         ))}
                     </Slider>
+                ) : (
+                    <h1 style={{color: 'gray'}}>در حال بارگیری...</h1>
                 )}
         </div>
     );
