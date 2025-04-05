@@ -72,7 +72,7 @@ export default function HousePlants() {
                         ))}
                     </Slider>
                 ) : (
-                    <h1 style={{color: 'gray'}}>در حال بارگیری...</h1>
+                    <h3 style={{color: 'gray', textAlign: 'center'}}>در حال بارگیری</h3>
                 )}
         </div>
     );

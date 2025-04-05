@@ -31,7 +31,7 @@ function PrevArrow(props) {
 }
 
 export default function GiftPlants() {
-  const { giftPlants } = useMainProducts()
+  const { giftPlants, loading } = useMainProducts()
   // Slider settings
   const settings = {
     infinite: true,
@@ -63,7 +63,7 @@ export default function GiftPlants() {
 
       <h1 className='title-slider'>گیاهان کادویی</h1>
 
-      {giftPlants && (
+      {giftPlants.length != 0 ? (
         <Slider {...settings}>
           {giftPlants.map((giftPlant) => (
             <div key={giftPlant.id} className="container-slider">
@@ -71,6 +71,9 @@ export default function GiftPlants() {
             </div>
           ))}
         </Slider>
+      ) : (
+        <h3 style={{color: 'gray', textAlign: 'center'}}>در حال بارگیری</h3>
+
       )}
     </div>
   );

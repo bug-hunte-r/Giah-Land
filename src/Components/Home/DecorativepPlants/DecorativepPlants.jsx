@@ -31,7 +31,7 @@ function PrevArrow(props) {
 }
 
 export default function DecorativepPlants() {
-  const { decorativePlants } = useMainProducts()
+  const { decorativePlants, loading } = useMainProducts()
   // Slider settings
   const settings = {
     infinite: true,
@@ -63,7 +63,7 @@ export default function DecorativepPlants() {
 
       <h1 className='title-slider'>گیاهان تزئینی</h1>
 
-      {decorativePlants && (
+      {decorativePlants.length != 0 ? (
         <Slider {...settings}>
           {decorativePlants.map((decorativepPlant) => (
             <div key={decorativepPlant.id} className="container-slider">
@@ -71,6 +71,9 @@ export default function DecorativepPlants() {
             </div>
           ))}
         </Slider>
+      ) : (
+        <h3 style={{color: 'gray', textAlign: 'center'}}>در حال بارگیری</h3>
+
       )}
     </div>
   );
