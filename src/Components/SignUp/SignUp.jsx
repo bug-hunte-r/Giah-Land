@@ -17,6 +17,8 @@ export default function SignUp() {
   const [gmail, setGmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const [isValid, setIsValid] = useState(false)
+
   let newUserInfo = {
     name,
     lastName,
@@ -41,11 +43,24 @@ export default function SignUp() {
 
         redirect('/')
       });
+
+    if (name && lastName && phonNumber && gmail && password != '') {
+      setIsValid(true)
+    } else {
+      setIsValid(false)
+    }
+
+    setName('')
+    setLastName('')
+    setPhonNumber('')
+    setGmail('')
+    setPassword('')
+
   };
 
   useEffect(() => {
-    console.log(allUsers);
-  }, []);
+    console.log(isValid);
+  }, [isValid])
 
   return (
     <div className="container">
