@@ -4,6 +4,7 @@ import { BsShopWindow } from "react-icons/bs";
 import SameProduct from './SameProduct/SameProduct';
 import Comments from './Comment/Comments';
 import Footer from '../Home/Footer/Footer';
+import { Link } from 'react-router-dom';
 
 export default function MainProduct() {
 
@@ -19,7 +20,7 @@ export default function MainProduct() {
                         <p className="price">۵۶۰/۰۰۰ تومان</p>
                         <p className="title-price">:قیمت</p>
                     </div>
-                    <button className="add-product-btn">افزودن به سبد خرید</button>
+                    <Link className="add-product-btn" to={'/cart'}>افزودن به سبد خرید</Link>
                 </div>
 
                 <div className="container-main-products-infos">
