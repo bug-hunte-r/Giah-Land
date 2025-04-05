@@ -1,7 +1,6 @@
 import './MainProduct.css'
 import './mediaMainProduct.css'
 import { BsShopWindow } from "react-icons/bs";
-import SameProduct from './SameProduct/SameProduct';
 import Comments from './Comment/Comments';
 import Footer from '../Home/Footer/Footer';
 import { Link } from 'react-router-dom';
@@ -59,14 +58,6 @@ export default function MainProduct() {
                 <div className="container-main-product-img">
                     <img src="/Imgs/img-slider-decor.png" className='main-product-img' />
                 </div>
-            </div>
-
-            <p className="title-same-product">گیاه های مشابه </p>
-            <div className="container-same-products-cards">
-                <SameProduct />
-                <SameProduct />
-                <SameProduct />
-                <SameProduct />
             </div>
 
             <p className="title-comments">دیدگاه ها و امتیاز</p>
