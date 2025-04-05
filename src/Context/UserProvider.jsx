@@ -8,16 +8,13 @@ const UserProvider = ({ children }) => {
   const [loading, setLoading] = useState(true); // Track loading
 
   useEffect(() => {
-    console.log('UserProvider useEffect running...');
 
     const cookies = document.cookie
       .split('; ')
       .find((row) => row.startsWith('session='));
     const session = cookies ? cookies.split('=')[1] : null;
-    console.log('Session cookie:', session);
 
     if (!session) {
-      console.log('No session found. User stays null.');
       setLoading(false);
       return;
     }
