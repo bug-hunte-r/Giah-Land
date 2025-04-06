@@ -72,8 +72,7 @@ export default function GiftPlants() {
           ))}
         </Slider>
       ) : (
-        <h3 style={{color: 'gray', textAlign: 'center'}}>در حال بارگیری</h3>
-
+        <div class="loader"></div>
       )}
     </div>
   );
