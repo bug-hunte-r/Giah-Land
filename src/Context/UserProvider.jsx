@@ -25,7 +25,6 @@ const UserProvider = ({ children }) => {
         setUser(decodedUser || null); // Set null if decodedUser is falsy
       })
       .catch((err) => {
-        console.error('Decrypt failed:', err);
         setUser(null); // Reset to null on error
       })
       .finally(() => {

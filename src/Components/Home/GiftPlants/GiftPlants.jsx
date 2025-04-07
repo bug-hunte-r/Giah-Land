@@ -72,7 +72,7 @@ export default function GiftPlants() {
           ))}
         </Slider>
       ) : (
-        <div class="loader"></div>
+        <div className="loader"></div>
       )}
     </div>
   );

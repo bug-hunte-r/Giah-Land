@@ -67,7 +67,7 @@ export default function HousePlants() {
                     <Slider {...settings}>
                         {housePlants.map((housePlant) => (
                             <div key={housePlant.id} className="container-slider">
-                                <ProductCard name={housePlant.name} price={housePlant.price} image={housePlant.image} id={housePlant.id} />
+                                <ProductCard {...housePlant} />
                             </div>
                         ))}
                     </Slider>

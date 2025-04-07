@@ -23,6 +23,7 @@
     position: relative;
     animation: l15-0 1s infinite linear;
     margin: 0 auto;
+    margin-top: 70px;
   }
   .loader::before {
     content:"";

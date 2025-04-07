@@ -4,12 +4,14 @@ import "./mediaSignUp.css";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdKey } from "react-icons/md";
-import { Link, redirect } from "react-router-dom";
+import { Link, redirect, useNavigate } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa6";
 import { FaUserTie } from "react-icons/fa";
 
 export default function SignUp() {
   const [allUsers, setAllUsers] = useState([]);
+
+  const navigate = useNavigate()
 
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -44,7 +46,7 @@ export default function SignUp() {
         redirect('/')
       });
 
-    if (name && lastName && phonNumber && gmail && password != '') {
+    if (name.length && lastName.length && phonNumber.length && gmail.length && password.length != 0) {
       setIsValid(true)
     } else {
       setIsValid(false)
@@ -59,7 +61,11 @@ export default function SignUp() {
   };
 
   useEffect(() => {
-    console.log(isValid);
+
+    if (isValid) {
+      navigate('/userDashboard')
+    }
+
   }, [isValid])
 
   return (

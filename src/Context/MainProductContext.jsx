@@ -19,8 +19,8 @@ export function MainProductsProvider({ children }) {
       "https://giahland-api.vercel.app/api/products"
     );
     const data = await response.json();
-    console.log(data);
     setAllProducts((prev) => [...data.products]);
+    
     setHousePlants(
       data.products.filter((product) => product.category === "آپارتمانی")
     );
