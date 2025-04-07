@@ -18,7 +18,7 @@ let router = [
     { path: "/counseling", element: <Counseling />},
     { path: '/chat', element: <ChatPage /> },
     { path: '/mainProduct/:ProductName', element: <MainProduct /> },
-    { path: '/Cart', element: <Cart /> },
+    { path: '/Cart/:ProductName', element: <Cart /> },
     { path: '*', element: <Page404 /> },
 ]
 

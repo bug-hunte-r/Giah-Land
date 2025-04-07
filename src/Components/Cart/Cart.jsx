@@ -5,13 +5,23 @@ import './Cart.css'
 import './mediaCart.css'
 import Modal from '../Modal/Modal';
 import Footer from '../Home/Footer/Footer';
+import { useMainProducts } from '../../Context/MainProductContext';
+import { useParams } from 'react-router-dom';
 
 export default function Cart() {
+
+    const { allProducts } = useMainProducts()
+
+    const params = useParams()
+
+    const products = allProducts.find(product => product.name == params.ProductName)    
 
     const [isShowModal, setIsShowModal] = useState(false)
 
     const [productCount, setProductCount] = useState(1)
-    let priceProduct = 560000
+    const [priceProduct, setPriceProduct] = useState(products.price)
+
+
 
     let totalPrice = productCount * priceProduct
 
@@ -64,10 +74,12 @@ export default function Cart() {
 
                 <div className="container-cart-right">
                     <div className="container-add-and-remove-product">
-                        <h3 className="name-product-cart">گیاه طبیعی بابا آدم</h3>
+                        {products && (
+                            <h3 className="name-product-cart">{products.name}</h3>
+                        )}
                         <h4 className="name-seller-cart">فلاور گاردن</h4>
                         <div className="container-price-cart">
-                            <h3 className="price-cart">۵۶۰/۰۰۰ تومان</h3>
+                            <h3 className="price-cart">{priceProduct} تومان</h3>
                             <h3 className="title-price-cart">:قیمت</h3>
                         </div>
                         <div className="div-add-and-remove-product">
@@ -77,7 +89,9 @@ export default function Cart() {
                         </div>
                     </div>
                     <div className="container-img-product-cart">
-                        <img src="/Imgs/Frame 11.png" className='img-product-in-cart' />
+                        {products && (
+                            <img src={products.image} className='img-product-in-cart' />
+                        )}
                     </div>
                 </div>
             </div>

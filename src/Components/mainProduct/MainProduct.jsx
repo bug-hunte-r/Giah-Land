@@ -5,7 +5,6 @@ import Comments from './Comment/Comments';
 import Footer from '../Home/Footer/Footer';
 import { Link, useParams } from 'react-router-dom';
 import { useMainProducts } from '../../Context/MainProductContext';
-import { useEffect } from 'react';
 
 export default function MainProduct() {
 
@@ -13,12 +12,7 @@ export default function MainProduct() {
 
     const params = useParams()
 
-    if (allProducts) {
-        console.log(allProducts);
-    }
-
     const products = allProducts.find(product => product.name == params.ProductName)
-
 
     return (
         <div className='container'>
@@ -29,17 +23,22 @@ export default function MainProduct() {
                     <p className="seller"> <abbr style={{ color: '#396F4B' }} >عالی</abbr>فلاور گاردن | عملکرد <BsShopWindow size={17} /></p>
                     <p className="rate">۴.۶</p>
                     <div className="container-price">
-                        {allProducts && (
+                        {products && (
                             <p className="price">{products.price} تومان</p>
                         )}
                         <p className="title-price">:قیمت</p>
                     </div>
-                    <Link className="add-product-btn" to={'/cart'}>افزودن به سبد خرید</Link>
+                    {products && (
+                        <Link className="add-product-btn" to={`/cart/${products.name}`}>افزودن به سبد خرید</Link>
+                    )}
                 </div>
 
                 <div className="container-main-products-infos">
-                    <p className="title-main-product">نهال و گیاهان {products.category}</p>
-                    {allProducts && (
+                    {products && (
+                        <p className="title-main-product">نهال و گیاهان {products.category}</p>
+                    )}
+
+                    {products && (
                         <h4 className="name-main-product">{products.name}</h4>
                     )}
                     <h4 className="title-infos">ویژگی ها</h4>
@@ -47,13 +46,13 @@ export default function MainProduct() {
                     <div className="conatiner-ifos-boxes">
                         <div className="boxes-infos">
                             <p className="title-box">جنس گلدان</p>
-                            {allProducts && (
+                            {products && (
                                 <p className="infos-box">{products.pot_material}</p>
                             )}
                         </div>
                         <div className="boxes-infos">
                             <p className="title-box">خاک گیاه</p>
-                            {allProducts && (
+                            {products && (
                                 <p className="infos-box">{products.soil_type}</p>
                             )}
                         </div>
@@ -63,7 +62,7 @@ export default function MainProduct() {
                         </div>
                         <div className="boxes-infos">
                             <p className="title-box">ابعاد</p>
-                            {allProducts && (
+                            {products && (
                                 <p className="infos-box">{products.weight}</p>
                             )}
                         </div>
@@ -71,7 +70,7 @@ export default function MainProduct() {
 
                         <div className="boxes-infos">
                             <p className="title-box">وضعیت نسبت به آفتاب</p>
-                            {allProducts && (
+                            {products && (
                                 <p className="infos-box">{products.sun_exposure}</p>
                             )}
                         </div>
@@ -82,7 +81,7 @@ export default function MainProduct() {
                 </div>
 
                 <div className="container-main-product-img">
-                    {allProducts && (
+                    {products && (
                         <img src={products.image} className='main-product-img' />
                     )}
                 </div>
