@@ -1,0 +1,17 @@
+.container-empty-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.title-empty-cart{
+    font-size: 20px;
+}
+
+.subTitle-empty-cart{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -10px;
+}
