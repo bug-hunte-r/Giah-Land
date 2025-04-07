@@ -3,15 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
 }
 
 .title-empty-cart{
     font-size: 20px;
+    text-align: center;
 }
 
 .subTitle-empty-cart{
     font-size: 18px;
     font-weight: 300;
     margin-top: -10px;
+    text-align: center;
 }
