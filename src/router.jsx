@@ -8,6 +8,7 @@ import Counseling from "./Components/Counseling/Counseling"
 import MainProduct from "./Components/mainProduct/MainProduct"
 import Cart from "./Components/Cart/Cart"
 import Page404 from "./Components/Page404/Page404"
+import EmptyCart from "./Components/EmptyCart/EmptyCart"
 
 let router = [
     { path: "/", element: <Home /> },
@@ -19,6 +20,7 @@ let router = [
     { path: '/chat', element: <ChatPage /> },
     { path: '/mainProduct/:ProductName', element: <MainProduct /> },
     { path: '/Cart/:ProductName', element: <Cart /> },
+    { path: '/Cart', element: <EmptyCart /> },
     { path: '*', element: <Page404 /> },
 ]
 
