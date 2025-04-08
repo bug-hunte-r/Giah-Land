@@ -14,15 +14,15 @@ export default function Cart() {
 
     const params = useParams()
 
-    const products = allProducts.find(product => product.name == params.ProductName)    
+    const products = allProducts.find(product => product.name == params.ProductName)
 
     const [isShowModal, setIsShowModal] = useState(false)
 
     const [productCount, setProductCount] = useState(1)
+
     const [priceProduct, setPriceProduct] = useState(products.price)
 
-
-
+    
     let totalPrice = productCount * priceProduct
 
     let minusProductCountHandler = () => {
@@ -60,7 +60,7 @@ export default function Cart() {
                         <h3 className="title-count-side-left">:تعداد گیاه</h3>
                     </div>
                     <div className="container-price-side-left">
-                        <h3 className="price-side-left">{totalPrice} تومان</h3>
+                        <h3 className="price-side-left">{totalPrice.toLocaleString()} تومان</h3>
                         <h3 className="title-price-side-left">:مجموع سبد خرید</h3>
                     </div>
                     <div className="container-send-from">
@@ -79,7 +79,7 @@ export default function Cart() {
                         )}
                         <h4 className="name-seller-cart">فلاور گاردن</h4>
                         <div className="container-price-cart">
-                            <h3 className="price-cart">{priceProduct} تومان</h3>
+                            <h3 className="price-cart">{priceProduct.toLocaleString()} تومان</h3>
                             <h3 className="title-price-cart">:قیمت</h3>
                         </div>
                         <div className="div-add-and-remove-product">

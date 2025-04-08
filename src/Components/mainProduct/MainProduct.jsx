@@ -24,7 +24,7 @@ export default function MainProduct() {
                     <p className="rate">۴.۶</p>
                     <div className="container-price">
                         {products && (
-                            <p className="price">{products.price} تومان</p>
+                            <p className="price">{products.price.toLocaleString()} تومان</p>
                         )}
                         <p className="title-price">:قیمت</p>
                     </div>
