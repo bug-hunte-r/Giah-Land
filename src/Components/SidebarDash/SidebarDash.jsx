@@ -5,9 +5,12 @@ import { FaRegUser } from "react-icons/fa6";
 import { BiPlusMedical } from "react-icons/bi";
 import { MdMailOutline } from "react-icons/md";
 import { FiLogOut } from "react-icons/fi";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function SidebarDash() {
+
+    const location = useLocation()
+
     return (
         <div className="container">
             <div className='container-sidebar'>
@@ -21,9 +24,9 @@ export default function SidebarDash() {
                 </div>
 
                 <div className="container-btns-sidebar">
-                    <Link to={'/userDashboard'} className='link-sidebar'> <button className="btns-sidebar sidebar-btn-active">مشخصات حساب کاربری <FaRegUser size={17} className='icons-sidebar' /> </button> </Link>
-                    <Link to={'/counseling'} className='link-sidebar'> <button className="btns-sidebar">مشاوره با گیاه پزشک <BiPlusMedical size={17} className='icons-sidebar' /> </button> </Link>
-                    <Link to={'/chat'} className='link-sidebar'> <button className="btns-sidebar">پیام های دریافتی <MdMailOutline size={19} className='icons-sidebar' /> </button> </Link>
+                    <Link to={'/userDashboard'} className={`link-sidebar btns-sidebar ${location.pathname === "/userDashboard" ? "sidebar-btn-active" : ""}`}>مشخصات حساب کاربری <FaRegUser size={17} className='icons-sidebar' /></Link>
+                    <Link to={'/counseling'} className={`link-sidebar btns-sidebar ${location.pathname === "/counseling" ? "sidebar-btn-active" : ""}`}>مشاوره با گیاه پزشک <BiPlusMedical size={17} className='icons-sidebar' /></Link>
+                    <Link to={'/chat'} className={`link-sidebar btns-sidebar ${location.pathname === "/chat" ? "sidebar-btn-active" : ""}`}>پیام های دریافتی <MdMailOutline size={19} className='icons-sidebar' /></Link>
                 </div>
 
                 <button className="logOut-sidebar">خروج از حساب کاربری <FiLogOut size={17} className='icon-logout-sidebar'/> </button>

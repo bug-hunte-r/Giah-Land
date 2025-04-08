@@ -37,7 +37,7 @@ export default function Header() {
               <li className='li-nav-links'><a href='' className='nav-links'>درباره ما</a></li>
               <li className='li-nav-links'><a href='' className='nav-links'>وبلاگ</a></li>
               <li className='li-nav-links'><a href="" className='nav-links'>گیاه پزشک</a></li>
-              <li className='li-nav-links'><Link to={'/'} className='nav-links'>صفحه اصلی</Link></li>
+              <li className='li-nav-links'><Link to={'/'} className={`nav-links ${location.pathname === "/" ? "nav-links-active" : ""}`}>صفحه اصلی</Link></li>
             </ul>
           </div>
           <h1 className='logo'>گیاه لند</h1>

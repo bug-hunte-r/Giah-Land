@@ -245,3 +245,7 @@
 .unActive{
    margin-top: -560px;
 }
+
+.nav-links-active {
+   color: #417F56;
+}

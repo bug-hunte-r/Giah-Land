@@ -55,6 +55,7 @@
     background: none;
     cursor: pointer;
     transition: 0.3s;
+    padding: 0 10px;
 }
 
 .btns-sidebar:hover{
