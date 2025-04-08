@@ -6,3 +6,5 @@
 <p>react-Icons for Icons.✔</p>
 <p>react-Slick for Slider.✔</p>
 <p>Context-API for stage management✔</p>
+<hr>
+<h1>Project with real backend developed with Next.js⚡</h1>
